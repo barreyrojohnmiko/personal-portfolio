@@ -1,12 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState} from "react";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 import Card from "../views/Card";
 
 const Home = () => {
-  const windowHeight = useRef(window.innerHeight);
-  const windowWidth = useRef(window.innerWidth);
-
   const [cardData, setCardData] = useState({
     fName: "Sofia Noreen",
     lName: "Esposo",
@@ -19,13 +17,17 @@ const Home = () => {
         <Card {...cardData} />
       </div> */}
       <div className="header">
-        <div className="header-logo">
-          Miko
-        </div>
+        <div className="header-logo">MIKO</div>
         <div className="header-menu">
-          <button className="header-btn-text btn-about">About</button>
-          <button className="header-btn-text btn-resume">Portfolio</button>
-          <button className="header-btn-text btn-contact">Contact</button>
+          <Link to="/about" className="btn-about-link">
+            <button className="header-btn-text btn-about">About</button>
+          </Link>
+          <Link to="/portfolio" className="btn-resume-link">
+            <button className="header-btn-text btn-resume">Portfolio</button>
+          </Link>
+          <Link to="/contact" className="btn-contact-link">
+            <button className="header-btn-text btn-contact">Contact</button>
+          </Link>
         </div>
       </div>
     </div>
