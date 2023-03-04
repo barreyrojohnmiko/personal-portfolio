@@ -5,11 +5,11 @@
 }
 
 .header {
-    height: 17%;
+    height: 12%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #221A37;
+    /* background: #221A37; */
     padding-left: 4.23%;
     padding-right: 4.23%;
 }
@@ -19,7 +19,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
-    color: #FFFFFF;
+    color: #000000;
     width: 10.2112676056338%;
 }
 
@@ -30,16 +30,30 @@
     width: 80.63380281690141%;
 }
 
-.header-btn-text {
+.header-btn-text-normal {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #000000;
 }
 
-.header-btn-text:hover {
-    color: #C6C9FF;
+.header-btn-text-special {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #750ff7;
+}
+
+.header-btn-text-normal:hover {
+    color: #750ff7;
+}
+
+.header-btn-text-special:hover {
+    color: #FFFFFF;
+    background: #750ff7;
+    border: none;
 }
 
 .btn-about {
@@ -48,7 +62,7 @@
 }
 
 .btn-about-link {
-    margin-left: 8%;
+    margin-left: 7%;
 }
 
 .btn-resume {
@@ -57,12 +71,12 @@
 }
 
 .btn-resume-link {
-    margin-left: 8%;
+    margin-left: 7%;
 }
 
 .btn-contact {
-    background: #402166;
-    border: none;
+    background: transparent;
+    border: 2px solid #4c1ba1;
     height: 40px;
     width: 120px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -71,5 +85,5 @@
 
 .btn-contact-link {
     margin-right: 2.53521126760563%;
-    margin-left: 8%;
+    margin-left: 7%;
 }

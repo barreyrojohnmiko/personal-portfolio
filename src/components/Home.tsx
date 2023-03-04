@@ -20,13 +20,13 @@ const Home = () => {
         <div className="header-logo">MIKO</div>
         <div className="header-menu">
           <Link to="/about" className="btn-about-link">
-            <button className="header-btn-text btn-about">About</button>
+            <button className="header-btn-text-normal btn-about">About</button>
           </Link>
           <Link to="/portfolio" className="btn-resume-link">
-            <button className="header-btn-text btn-resume">Portfolio</button>
+            <button className="header-btn-text-normal btn-resume">Portfolio</button>
           </Link>
           <Link to="/contact" className="btn-contact-link">
-            <button className="header-btn-text btn-contact">Contact</button>
+            <button className="header-btn-text-special btn-contact">Contact</button>
           </Link>
         </div>
       </div>
