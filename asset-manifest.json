@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RJSPersonalPortfolio/static/css/main.12ad5454.css",
+    "main.js": "/RJSPersonalPortfolio/static/js/main.dac1277f.js",
+    "index.html": "/RJSPersonalPortfolio/index.html",
+    "main.12ad5454.css.map": "/RJSPersonalPortfolio/static/css/main.12ad5454.css.map",
+    "main.dac1277f.js.map": "/RJSPersonalPortfolio/static/js/main.dac1277f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12ad5454.css",
+    "static/js/main.dac1277f.js"
+  ]
+}
