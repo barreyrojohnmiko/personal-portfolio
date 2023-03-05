@@ -70,6 +70,40 @@
 }
 
 .dev-photo {
-    height: 280px;
-    width: 280px;
+    height: 300px;
+    width: 300px;
 }
+
+.tech-list {
+    display: flex;
+}
+
+.tech-list-spacing {
+    margin-right: 65px;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #8892B0;
+  }
+  
+  .bullet-point {
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .bullet-point::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #C094D3;
+  }
+  
