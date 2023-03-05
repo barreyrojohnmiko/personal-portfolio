@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Home.css";
+import About from "./About";
 import Card from "../views/Card";
 import AnimatedButton from "../views/AnimatedButton";
 
@@ -35,16 +36,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="body">
-        <div className="about-dev">
-          <div className="job-title">Front-end Developer</div>
-          <div className="job-description">
-            Detail-oriented front-end developer who is passionate about crafting
-            engaging user experiences. I take pride in bringing your ideas to
-            life with clean and efficient code.
-          </div>
-        </div>
-      </div>
+      <About />
     </div>
   );
 };

@@ -1,0 +1,75 @@
+.introduction-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20%;
+    margin-bottom: 20%;
+    width: 900px;
+}
+
+.greetings {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #C094D3;
+    margin-bottom: 4px;
+}
+
+.full-name {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    color: #CCD6F6;
+}
+
+.job-description {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #8892B0;
+    font-size: 20px;
+}
+
+.about-container {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 10%;
+    flex-direction: row;
+    /* width: 800px; */
+}
+
+.label {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: #C094D3;
+}
+
+.about-me-container {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-sub-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #8892B0;
+    width: 900px;
+    margin-right: 100px;
+}
+
+.dev-photo {
+    height: 280px;
+    width: 280px;
+}
