@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import "./Home.css";
@@ -13,6 +13,17 @@ const Home = () => {
     age: 22,
   });
 
+  const aboutSectionRef = useRef<HTMLDivElement>(null);
+
+  const handleAboutClick = () => {
+    if (aboutSectionRef.current) {
+      window.scrollTo({
+        top: aboutSectionRef.current.offsetTop + 500,
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
     <div className="main-component">
       {/* <div>
@@ -22,7 +33,7 @@ const Home = () => {
         <div className="header-logo">MIKO</div>
         <div className="header-menu">
           <div className="header-btn-text-spacing">
-            <button className="header-btn-text btn-border">About</button>
+            <button className="header-btn-text btn-border" onClick={handleAboutClick}>About</button>
           </div>
           <div className="header-btn-text-spacing">
             <button className="header-btn-text btn-border">Experience</button>
@@ -36,7 +47,9 @@ const Home = () => {
         </div>
       </div>
 
-      <About />
+      <div id="about-section" ref={aboutSectionRef}>
+        <About />
+      </div>
     </div>
   );
 };
