@@ -1,12 +1,9 @@
 import React from "react";
 import "./About.css";
 
-import Sidebar from "../views/Sidebar";
-
 const About = () => {
   return (
     <div>
-      
       <div className="about-body">
         <div className="introduction-container">
           <div className="greetings">Hello, my name is</div>

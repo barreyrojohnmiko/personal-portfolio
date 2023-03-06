@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 
 import "./Home.css";
 import About from "./About";
-import AnimatedButton from "../views/AnimatedButton";
 import Sidebar from "../views/Sidebar";
 import Header from "../views/Header";
 
@@ -24,9 +23,7 @@ const Home = () => {
         <Sidebar />
       </div>
       <div className="header-container">
-        <div>
-          <Header />
-        </div>
+        <Header handleAboutClick={handleAboutClick} />
         <div id="about-section" ref={aboutSectionRef}>
           <About />
         </div>

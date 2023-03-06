@@ -1,20 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
 
 import "./Header.css";
 
 import AnimatedButton from "./AnimatedButton";
 
-const Header = () => {
-  const aboutSectionRef = useRef<HTMLDivElement>(null);
+interface HeaderProps {
+  handleAboutClick: () => void;
+}
 
-  const handleAboutClick = () => {
-    if (aboutSectionRef.current) {
-      window.scrollTo({
-        top: aboutSectionRef.current.offsetTop + 500,
-        behavior: "smooth",
-      });
-    }
-  };
+const Header = ({ handleAboutClick }: HeaderProps) => {
   return (
     <div className="header">
       <div className="header-logo">MIKO</div>
