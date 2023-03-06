@@ -33,7 +33,7 @@ const Header = () => {
         <div className="header-btn-text-spacing">
           <button className="header-btn-text btn-border">Works</button>
         </div>
-        <div className="btn-contact-spacing">
+        <div className="header-btn-text-spacing">
           <AnimatedButton />
         </div>
       </div>

@@ -15,7 +15,6 @@
     font-weight: 400;
     font-size: 27px;
     color: #CCD6F6;
-    width: 10.2112676056338%;
 }
 
 .header-menu {
@@ -44,9 +43,4 @@
 .btn-border {
     background: transparent;
     border: none;
-}
-
-.btn-contact-spacing {
-    margin-right: 2.53521126760563%;
-    margin-left: 4%;
 }
