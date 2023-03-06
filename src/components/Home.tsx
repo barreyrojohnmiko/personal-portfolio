@@ -4,6 +4,7 @@ import "./Home.css";
 import About from "./About";
 import AnimatedButton from "../views/AnimatedButton";
 import Sidebar from "../views/Sidebar";
+import Header from "../views/Header";
 
 const Home = () => {
   const aboutSectionRef = useRef<HTMLDivElement>(null);
@@ -19,33 +20,13 @@ const Home = () => {
 
   return (
     <div className="main-component">
-      <div className="sidebar">
+      <div className="sidebar-container">
         <Sidebar />
       </div>
-      <div>
-        <div className="header">
-          <div className="header-logo">MIKO</div>
-          <div className="header-menu">
-            <div className="header-btn-text-spacing">
-              <button
-                className="header-btn-text btn-border"
-                onClick={handleAboutClick}
-              >
-                About
-              </button>
-            </div>
-            <div className="header-btn-text-spacing">
-              <button className="header-btn-text btn-border">Experience</button>
-            </div>
-            <div className="header-btn-text-spacing">
-              <button className="header-btn-text btn-border">Works</button>
-            </div>
-            <div className="btn-contact-spacing">
-              <AnimatedButton />
-            </div>
-          </div>
+      <div className="header-container">
+        <div>
+          <Header />
         </div>
-
         <div id="about-section" ref={aboutSectionRef}>
           <About />
         </div>
