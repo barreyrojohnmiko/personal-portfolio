@@ -1,0 +1,8 @@
+.exp-body {
+    background: #221A37;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 500px;
+}

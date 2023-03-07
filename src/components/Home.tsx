@@ -11,7 +11,7 @@ const Home = () => {
   const handleAboutClick = () => {
     if (aboutSectionRef.current) {
       window.scrollTo({
-        top: aboutSectionRef.current.offsetTop + 500,
+        top: aboutSectionRef.current.offsetTop - 50,
         behavior: "smooth",
       });
     }
@@ -24,8 +24,8 @@ const Home = () => {
       </div>
       <div className="header-container">
         <Header handleAboutClick={handleAboutClick} />
-        <div id="about-section" ref={aboutSectionRef}>
-          <About />
+        <div>
+          <About id="about-section" aboutSectionRef={aboutSectionRef} />
         </div>
       </div>
     </div>
