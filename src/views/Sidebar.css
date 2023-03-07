@@ -23,5 +23,7 @@
 }
 
 .sidebar-logo:hover {
-    color: white;
+    color: #C094D3;
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out;
 }
