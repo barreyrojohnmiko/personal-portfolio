@@ -1,6 +1,8 @@
 import React, { RefObject } from "react";
 import "./Contact.css";
 
+import SendMessageButton from "../views/SendMessageButton";
+
 type ContactProps = {
   contactSectionRef: RefObject<HTMLDivElement>;
 };
@@ -12,11 +14,9 @@ const Contact: React.FC<ContactProps> = ({ contactSectionRef }) => {
         <div className="contact-flex-container">
           <div className="contact-label">Get In Touch</div>
           <div className="contact-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
-            neque, blanditiis delectus voluptatibus, facilis praesentium iste
-            aperiam debitis vitae alias obcaecati reprehenderit doloribus fuga
-            assumenda enim ullam animi itaque quidem.
+            Interested in working together? Don't hesitate to leave me a message.
           </div>
+          <SendMessageButton />
         </div>
       </div>
     </div>

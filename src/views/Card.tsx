@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./Card.css";
 
 import CardDto from "../models/CardDto";

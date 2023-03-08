@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-
 import "./Home.css";
+
 import About from "./About";
 import Sidebar from "../views/Sidebar";
 import Header from "../views/Header";
