@@ -10,7 +10,7 @@ const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
     <div className="main-body-container">
       <div className="about-body">
         <div className="introduction-container">
-          <div className="greetings">Hello, my name isss</div>
+          <div className="greetings">Hello, my name is</div>
           <div className="full-name"> Barreyro, John Miko</div>
           <div className="job-description">
             I'm a web and mobile front-end developer who is passionate about
