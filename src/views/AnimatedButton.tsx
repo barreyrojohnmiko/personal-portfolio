@@ -1,10 +1,13 @@
 import React from "react";
-
 import "./AnimatedButton.css";
 
-const AnimatedButton = () => {
+interface AnimatedButtonProps {
+  animatedButtonClick: () => void;
+}
+
+const AnimatedButton = ({ animatedButtonClick }: AnimatedButtonProps) => {
   return (
-    <div>
+    <div onClick={animatedButtonClick}>
       <button className="animated-button">
         <span></span>
         <span></span>

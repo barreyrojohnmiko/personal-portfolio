@@ -2,11 +2,10 @@ import React, { RefObject } from "react";
 import "./About.css";
 
 type AboutProps = {
-  id: string;
   aboutSectionRef: RefObject<HTMLDivElement>;
 };
 
-const About: React.FC<AboutProps> = ({ id, aboutSectionRef }) => {
+const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
   return (
     <div className="main-body-container">
       <div className="about-body">
@@ -20,7 +19,7 @@ const About: React.FC<AboutProps> = ({ id, aboutSectionRef }) => {
           </div>
         </div>
 
-        <div className="about-container" id={id} ref={aboutSectionRef}>
+        <div className="about-container" ref={aboutSectionRef}>
           <div className="dev-profile">
             <div className="label">&lt;about-me&gt;</div>
             <div className="about-me-container">

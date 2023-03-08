@@ -1,14 +1,14 @@
 import React from "react";
-
 import "./Header.css";
 
 import AnimatedButton from "./AnimatedButton";
 
 interface HeaderProps {
   handleAboutClick: () => void;
+  handleContactClick: () => void;
 }
 
-const Header = ({ handleAboutClick }: HeaderProps) => {
+const Header = ({ handleAboutClick, handleContactClick }: HeaderProps) => {
   return (
     <div className="header">
       <div className="header-logo">MIKO</div>
@@ -28,7 +28,7 @@ const Header = ({ handleAboutClick }: HeaderProps) => {
           <button className="header-btn-text btn-border">Works</button>
         </div>
         <div className="header-btn-text-spacing">
-          <AnimatedButton />
+          <AnimatedButton animatedButtonClick={handleContactClick} />
         </div>
       </div>
     </div>
