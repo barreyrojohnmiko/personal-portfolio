@@ -45,6 +45,7 @@
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
   color: #373b61;
+  margin-right: 10px;
 }
 
 .btnSendMessage:hover .svg-wrapper {
@@ -54,6 +55,7 @@
 
 .btnSendMessage:hover svg {
   transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  margin-left: -10px;
 }
 
 @keyframes fly-1 {
