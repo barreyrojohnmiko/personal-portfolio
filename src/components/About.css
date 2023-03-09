@@ -22,7 +22,7 @@
   font-weight: 400;
   font-size: 30px;
   color: #c094d3;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
 }
 
 .full-name {
@@ -31,6 +31,7 @@
   font-weight: bold;
   font-size: 90px;
   color: #ccd6f6;
+  margin-bottom: 10px;
 }
 
 .job-description {
@@ -50,7 +51,6 @@
 .developer-profile {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .about-label {
@@ -124,4 +124,57 @@ ul {
   border-style: solid;
   border-width: 5px 0 5px 5px;
   border-color: transparent transparent transparent #c094d3;
+}
+
+@media (max-width: 767px) {
+  .about-main-container {
+    margin-bottom: 25%;
+  }
+
+  .introduction-container {
+    margin-top: 67.5%;
+    margin-bottom: 110%;
+  }
+
+  .greetings {
+    font-size: 20px;
+  }
+
+  .full-name {
+    font-size: 50px;
+  }
+
+  .job-description {
+    padding-right: 0%;
+    font-size: 16px;
+  }
+
+  .about-label {
+    font-size: 20px;
+  }
+
+  .about-me-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-text {
+    font-size: 16px;
+  }
+  
+  .developer-photo {
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+  }
+
+  .tech-listing-spacing {
+    margin-right: 0;
+  }
+
+  ul {
+    font-size: 14px;
+  }
 }

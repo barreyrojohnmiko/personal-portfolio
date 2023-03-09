@@ -67,3 +67,9 @@
     transform: translateY(-0.1em);
   }
 }
+
+@media (max-width: 767px) {
+  .send-message-button {
+    transform: scale(0.9);
+  }
+}

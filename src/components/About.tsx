@@ -46,6 +46,25 @@ const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
                 </div>
 
                 <br></br>
+
+                <div className="about-me-text">
+                  Here are a few technologies I’ve been working with recently:
+                  <div className="tech-listing">
+                    <ul className="tech-listing-spacing">
+                      <li className="bullet-point">JavaScript (ES6+)</li>
+                      <li className="bullet-point">React Native</li>
+                      <li className="bullet-point">ReactJS</li>
+                      <li className="bullet-point">Git</li>
+                      <li className="bullet-point">Postman</li>
+                    </ul>
+                    <ul className="tech-listing-spacing">
+                      <li className="bullet-point">TypeScript</li>
+                      <li className="bullet-point">Angular 14</li>
+                      <li className="bullet-point">Ionic-Angular</li>
+                      <li className="bullet-point">Wordpress</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div>
                 <img
@@ -53,26 +72,6 @@ const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
                   src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/333323418_723707869240371_5378287988469331409_n.jpg?stp=dst-jpg_p1080x2048&_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGrM4zpMLREqY896Xtj6MpRLXtxpL02TN4te3GkvTZM3gON2VL-JRaM5v2mi-XE271YU9KbdnLyOfpLBoGp0yeR&_nc_ohc=PUJuQHbaFOwAX_Cnym2&_nc_ht=scontent.fmnl17-1.fna&oh=03_AdRlFwXdnKxOuvN8R7SgSsklSoTn6V97sydfn4KTtdvVAw&oe=642BA1B0"
                   alt="Dev's Profile Picture"
                 />
-              </div>
-            </div>
-            <div className="about-me-text">
-              Here are a few technologies I’ve been working with recently:
-              <div className="tech-listing">
-                <ul className="tech-listing-spacing">
-                  <li className="bullet-point">JavaScript (ES6+)</li>
-                  <li className="bullet-point">React Native</li>
-                  <li className="bullet-point">ReactJS</li>
-                </ul>
-                <ul className="tech-listing-spacing">
-                  <li className="bullet-point">TypeScript</li>
-                  <li className="bullet-point">Angular 14</li>
-                  <li className="bullet-point">Ionic-Angular</li>
-                </ul>
-                <ul>
-                  <li className="bullet-point">Git</li>
-                  <li className="bullet-point">Postman</li>
-                  <li className="bullet-point">Wordpress</li>
-                </ul>
               </div>
             </div>
             <div className="about-label">&lt;/about-me&gt;</div>
