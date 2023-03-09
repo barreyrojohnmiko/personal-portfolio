@@ -12,8 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 900px;
-  margin-top: 19.5%;
+  margin-top: 19%;
   margin-bottom: 30%;
 }
 
@@ -23,7 +22,7 @@
   font-weight: 400;
   font-size: 30px;
   color: #c094d3;
-  margin-bottom: 4px;
+  margin-bottom: -10px;
 }
 
 .full-name {
@@ -39,7 +38,8 @@
   font-style: normal;
   font-weight: 300;
   color: #8892b0;
-  font-size: 20px;
+  font-size: 18px;
+  padding-right: 50%;
 }
 
 .about-container {
