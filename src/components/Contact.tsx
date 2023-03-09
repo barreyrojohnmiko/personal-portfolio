@@ -9,12 +9,13 @@ type ContactProps = {
 
 const Contact: React.FC<ContactProps> = ({ contactSectionRef }) => {
   return (
-    <div className="main-contact-container" ref={contactSectionRef}>
-      <div className="contact-body">
+    <div className="contact-main-container" ref={contactSectionRef}>
+      <div className="contact-sub-container">
         <div className="contact-flex-container">
-          <div className="contact-label">Get In Touch</div>
+          <div className="contact-header">Get In Touch</div>
           <div className="contact-description">
-            Interested in working together? Don't hesitate to leave me a message.
+            Interested in working together? Don't hesitate to leave me a
+            message.
           </div>
           <SendMessageButton />
         </div>

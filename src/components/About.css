@@ -1,10 +1,10 @@
-.main-body-container {
+.about-main-container {
   padding-left: 15%;
   padding-right: 15%;
   margin-bottom: 30%;
 }
 
-.about-body {
+.about-sub-container {
   width: 100%;
 }
 
@@ -47,13 +47,13 @@
   justify-content: center;
 }
 
-.dev-profile {
+.developer-profile {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
 
-.label {
+.about-label {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -63,7 +63,7 @@
   margin-bottom: 10px;
 }
 
-.about-me-container {
+.about-me-content {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -76,7 +76,7 @@
   margin-right: 70px;
 }
 
-.about-me {
+.about-me-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -87,17 +87,17 @@
   margin-left: 15px;
 }
 
-.dev-photo {
+.developer-photo {
   height: 280px;
   width: 280px;
 }
 
-.tech-list {
+.tech-listing {
   display: flex;
   flex-direction: row;
 }
 
-.tech-list-spacing {
+.tech-listing-spacing {
   margin-right: 20px;
 }
 

@@ -29,16 +29,16 @@ const Home = () => {
   };
 
   return (
-    <div className="main-component">
-      <div className="sidebar-container">
+    <div className="home-container">
+      <div className="sidebar-section">
         <Sidebar />
       </div>
-      <div className="header-container">
+      <div className="header-section">
         <Header handleAboutClick={handleAboutClick} handleContactClick={handleContactClick} />
         <div>
           <About aboutSectionRef={aboutSectionRef} />
         </div>
-        <div className="contact-container">
+        <div className="contact-section">
           <Contact contactSectionRef={contactSectionRef} />
         </div>
       </div>

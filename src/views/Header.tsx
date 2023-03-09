@@ -10,22 +10,22 @@ interface HeaderProps {
 
 const Header = ({ handleAboutClick, handleContactClick }: HeaderProps) => {
   return (
-    <div className="header">
+    <div className="header-main-container">
       <div className="header-logo">MIKO</div>
       <div className="header-menu">
         <div className="header-btn-text-spacing">
           <button
-            className="header-btn-text btn-border"
+            className="header-btn-text header-btn-border"
             onClick={handleAboutClick}
           >
             About
           </button>
         </div>
         <div className="header-btn-text-spacing">
-          <button className="header-btn-text btn-border">Experience</button>
+          <button className="header-btn-text header-btn-border">Experience</button>
         </div>
         <div className="header-btn-text-spacing">
-          <button className="header-btn-text btn-border">Works</button>
+          <button className="header-btn-text header-btn-border">Works</button>
         </div>
         <div className="header-btn-text-spacing">
           <AnimatedButton animatedButtonClick={handleContactClick} />

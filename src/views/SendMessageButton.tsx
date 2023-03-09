@@ -3,9 +3,9 @@ import "./SendMessageButton.css";
 
 const SendMessageButton = () => {
   return (
-    <button className="btnSendMessage">
+    <button className="send-message-button">
       <span>Send Message</span>
-      <div className="svg-wrapper">
+      <div className="send-message-icon">
         <svg
           height="24"
           width="24"

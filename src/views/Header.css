@@ -1,4 +1,4 @@
-.header {
+.header-main-container {
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,7 @@
     color: #C094D3;
 }
 
-.btn-border {
+.header-btn-border {
     background: transparent;
     border: none;
 }
