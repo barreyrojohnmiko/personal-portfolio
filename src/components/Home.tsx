@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Home.css";
 
 import About from "./About";
@@ -7,10 +7,15 @@ import Header from "../views/Header";
 import Contact from "./Contact";
 import Footer from "../views/Footer";
 import Introduction from "./Introduction";
+import HeaderHamburger from "../views/HeaderHamburger";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const aboutSectionRef = useRef<HTMLDivElement>(null);
   const contactSectionRef = useRef<HTMLDivElement>(null);
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleAboutClick = () => {
     if (aboutSectionRef.current) {
@@ -30,6 +35,44 @@ const Home = () => {
     }
   };
 
+  const handleOpenNavbar = () => {
+    setNavbarOpen(true);
+  };
+
+  const closeOpenNavbar = () => {
+    setNavbarOpen(false);
+  };
+
+  const renderNavbar = () => {
+    return (
+      <div className="navbar-section">
+        <div className="navbar-header-container">
+          <div onClick={closeOpenNavbar}>
+            <FontAwesomeIcon icon={faX} className="hamburger-logo" />
+          </div>
+        </div>
+        <div className="navbar-menu-container">
+          <div className="navbar-btn-text-spacing">
+            <button className="navbar-btn-text navbar-btn-border">About</button>
+          </div>
+          <div className="navbar-btn-text-spacing">
+            <button className="navbar-btn-text navbar-btn-border">
+              Experience
+            </button>
+          </div>
+          <div className="navbar-btn-text-spacing">
+            <button className="navbar-btn-text navbar-btn-border">Works</button>
+          </div>
+          <div className="navbar-btn-text-spacing">
+            <button className="navbar-btn-text navbar-btn-border">
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="home-container">
       <div className="sidebar-section">
@@ -37,7 +80,14 @@ const Home = () => {
       </div>
       <div className="content-section">
         <div className="header-section">
-          <Header handleAboutClick={handleAboutClick} handleContactClick={handleContactClick} />
+          <Header
+            handleAboutClick={handleAboutClick}
+            handleContactClick={handleContactClick}
+          />
+        </div>
+        {navbarOpen ? renderNavbar() : null}
+        <div className="header-hamburger-section">
+          <HeaderHamburger handleOpenNavbar={handleOpenNavbar} />
         </div>
         <div className="introduction-section">
           <Introduction />

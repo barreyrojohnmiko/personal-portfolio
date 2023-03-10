@@ -14,7 +14,7 @@ const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
           <div className="about-me-sub-container">
             <div className="about-me-text">
               I have a passion for exploring and developing innovative ideas. As
-              a naturally curious person, I became interested in development by
+              a naturally curious person, I became interested in coding by
               wondering on how I could hack into my neighbors' Wi-Fi. Although
               this wasn't a part of my formal education in Computer Science, I
               found turning my designs into functional websites very fulfilling
