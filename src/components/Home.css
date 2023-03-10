@@ -9,11 +9,19 @@
   width: calc(100% - 120px);
 }
 
-.about-section {
+.header-section {
+  margin-bottom: 10%;
+}
+
+.introduction-section {
+  padding-left: 15%;
+  padding-right: 15%;
   margin-bottom: 30%;
 }
 
-.contact-section {
+.about-section {
+  padding-left: 15%;
+  padding-right: 15%;
   margin-bottom: 30%;
 }
 
@@ -28,7 +36,16 @@
     width: 100%;
   }
 
+  .introduction-section {
+    margin-top: 39%;
+    margin-bottom: 80%;
+  }
+
   .sidebar-section {
     display: none;
+  }
+
+  .contact-section {
+    margin-bottom: 30%;
   }
 }

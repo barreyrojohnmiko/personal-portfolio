@@ -1,12 +1,4 @@
 .contact-main-container {
-  margin-bottom: 22%;
-}
-
-.contact-sub-container {
-  width: 100%;
-}
-
-.contact-flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;

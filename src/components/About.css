@@ -1,48 +1,5 @@
 .about-main-container {
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
-.about-sub-container {
   width: 100%;
-}
-
-.introduction-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 19%;
-  margin-bottom: 30%;
-}
-
-.greetings {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  color: #c094d3;
-  margin-bottom: 10px;
-}
-
-.full-name {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 90px;
-  color: #ccd6f6;
-  margin-bottom: 10px;
-}
-
-.job-description {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  color: #8892b0;
-  font-size: 18px;
-  padding-right: 50%;
-}
-
-.about-container {
   display: flex;
   justify-content: center;
 }
@@ -58,7 +15,6 @@
   font-weight: normal;
   font-size: 25px;
   color: #c094d3;
-
   margin-bottom: 10px;
 }
 
@@ -84,11 +40,6 @@
   width: 100%;
   overflow: hidden;
   margin-left: 15px;
-}
-
-.developer-photo {
-  height: 280px;
-  width: 280px;
 }
 
 .tech-listing {
@@ -125,27 +76,14 @@ ul {
   border-color: transparent transparent transparent #c094d3;
 }
 
+.developer-photo {
+  height: 280px;
+  width: 280px;
+}
+
 @media (max-width: 767px) {
   .about-main-container {
     margin-bottom: 25%;
-  }
-
-  .introduction-container {
-    margin-top: 67.5%;
-    margin-bottom: 110%;
-  }
-
-  .greetings {
-    font-size: 20px;
-  }
-
-  .full-name {
-    font-size: 50px;
-  }
-
-  .job-description {
-    padding-right: 0%;
-    font-size: 16px;
   }
 
   .about-label {
@@ -165,17 +103,17 @@ ul {
     padding-left: 3%;
   }
 
-  .developer-photo {
-    margin-bottom: 10px;
-    height: 200px;
-    width: 200px;
-  }
-
   .tech-listing-spacing {
     margin-right: 0;
   }
 
   ul {
     font-size: 14px;
+  }
+
+  .developer-photo {
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
   }
 }

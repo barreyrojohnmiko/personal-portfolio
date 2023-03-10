@@ -6,6 +6,7 @@ import Sidebar from "../views/Sidebar";
 import Header from "../views/Header";
 import Contact from "./Contact";
 import Footer from "../views/Footer";
+import Introduction from "./Introduction";
 
 const Home = () => {
   const aboutSectionRef = useRef<HTMLDivElement>(null);
@@ -37,6 +38,9 @@ const Home = () => {
       <div className="content-section">
         <div className="header-section">
           <Header handleAboutClick={handleAboutClick} handleContactClick={handleContactClick} />
+        </div>
+        <div className="introduction-section">
+          <Introduction />
         </div>
         <div className="about-section">
           <About aboutSectionRef={aboutSectionRef} />
