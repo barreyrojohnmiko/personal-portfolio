@@ -15,7 +15,7 @@ const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
           <div className="job-description">
             I'm a web and mobile front-end developer who is passionate about
             crafting engaging user experiences. I take pride in bringing your
-            ideas to life with clean and efficient code.
+            ideas to life with clean and efficient code. 
           </div>
         </div>
 
