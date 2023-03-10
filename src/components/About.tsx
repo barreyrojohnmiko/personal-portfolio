@@ -49,21 +49,21 @@ const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
 
                 <div className="about-me-text">
                   Here are a few technologies I’ve been working with recently:
-                  <div className="tech-listing">
-                    <ul className="tech-listing-spacing">
-                      <li className="bullet-point">JavaScript (ES6+)</li>
-                      <li className="bullet-point">React Native</li>
-                      <li className="bullet-point">ReactJS</li>
-                      <li className="bullet-point">Git</li>
-                      <li className="bullet-point">Postman</li>
-                    </ul>
-                    <ul className="tech-listing-spacing">
-                      <li className="bullet-point">TypeScript</li>
-                      <li className="bullet-point">Angular 14</li>
-                      <li className="bullet-point">Ionic-Angular</li>
-                      <li className="bullet-point">Wordpress</li>
-                    </ul>
-                  </div>
+                </div>
+                <div className="tech-listing">
+                  <ul className="tech-listing-spacing">
+                    <li className="bullet-point">JavaScript (ES6+)</li>
+                    <li className="bullet-point">React Native</li>
+                    <li className="bullet-point">ReactJS</li>
+                    <li className="bullet-point">Git</li>
+                    <li className="bullet-point">Postman</li>
+                  </ul>
+                  <ul className="tech-listing-spacing">
+                    <li className="bullet-point">TypeScript</li>
+                    <li className="bullet-point">Angular 14</li>
+                    <li className="bullet-point">Ionic-Angular</li>
+                    <li className="bullet-point">Wordpress</li>
+                  </ul>
                 </div>
               </div>
               <div>

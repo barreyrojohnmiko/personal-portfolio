@@ -1,0 +1,32 @@
+.footer-main-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-sub-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #b0b2c3;
+}
+
+.footer-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8892b0;
+}
