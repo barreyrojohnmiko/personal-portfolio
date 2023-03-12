@@ -21,7 +21,7 @@ const Home = () => {
   const handleAboutClick = () => {
     if (aboutSectionRef.current) {
       window.scrollTo({
-        top: aboutSectionRef.current.offsetTop - 20,
+        top: aboutSectionRef.current.offsetTop + 230,
         behavior: "smooth",
       });
     }

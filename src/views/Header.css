@@ -43,7 +43,7 @@
   border: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 1023px) {
   .header-main-container {
     margin-left: auto;
     padding-right: 0;
