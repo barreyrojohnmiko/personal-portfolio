@@ -50,7 +50,7 @@ const Home = () => {
         </div>
         <div className="navbar-menu-container">
           <div className="navbar-btn-text-spacing">
-            <button className="navbar-btn-text navbar-btn-border">About</button>
+            <button className="navbar-btn-text navbar-btn-border" onClick={handleAboutClick}>About</button>
           </div>
           <div className="navbar-btn-text-spacing">
             <button className="navbar-btn-text navbar-btn-border">
@@ -61,7 +61,7 @@ const Home = () => {
             <button className="navbar-btn-text navbar-btn-border">Works</button>
           </div>
           <div className="navbar-btn-text-spacing">
-            <button className="navbar-btn-text navbar-btn-border">
+            <button className="navbar-btn-text navbar-btn-border" onClick={handleContactClick}>
               Contact Me
             </button>
           </div>
@@ -82,9 +82,9 @@ const Home = () => {
             handleContactClick={handleContactClick}
           />
         </div>
-        {renderNavbar()}
         <div className="header-hamburger-section">
           <HeaderHamburger toggleNavbar={toggleNavbar} />
+          {renderNavbar()}
         </div>
         <div className="introduction-section">
           <Introduction />
