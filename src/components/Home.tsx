@@ -75,28 +75,27 @@ const Home = () => {
       <div className="sidebar-section">
         <Sidebar />
       </div>
-      <div className="content-section">
+      <div className="content-main-section">
         <div className="header-section">
-          <Header
-            handleAboutClick={handleAboutClick}
-            handleContactClick={handleContactClick}
-          />
+          <Header handleAboutClick={handleAboutClick} handleContactClick={handleContactClick} />
         </div>
         <div className="header-hamburger-section">
           <HeaderHamburger toggleNavbar={toggleNavbar} />
           {renderNavbar()}
         </div>
-        <div className="introduction-section">
-          <Introduction />
-        </div>
-        <div className="about-section">
-          <About aboutSectionRef={aboutSectionRef} />
-        </div>
-        <div className="contact-section">
-          <Contact contactSectionRef={contactSectionRef} />
-        </div>
-        <div className="footer-section">
-          <Footer />
+        <div className={`content-sub-section ${isNavbarOpen ? 'open' : ''}`}>
+          <div className="introduction-section">
+            <Introduction />
+          </div>
+          <div className="about-section">
+            <About aboutSectionRef={aboutSectionRef} />
+          </div>
+          <div className="contact-section">
+            <Contact contactSectionRef={contactSectionRef} />
+          </div>
+          <div className="footer-section">
+            <Footer />
+          </div>
         </div>
       </div>
     </div>
