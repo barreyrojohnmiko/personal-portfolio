@@ -62,12 +62,18 @@
   }
 
   .navbar-section {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0;
-    height: 100vh;
+    right: -75%;
+    bottom: 0;
     width: 75%;
     background-color: #112240;
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
+  }
+
+  .navbar-section.open {
+    right: 0;
   }
 
   .navbar-menu-container {

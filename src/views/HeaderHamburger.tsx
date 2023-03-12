@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 interface HamburgerProps {
-    handleOpenNavbar: () => void;
+  toggleNavbar: () => void;
 }
 
-const HeaderHamburger = ({handleOpenNavbar}: HamburgerProps) => {
+const HeaderHamburger = ({toggleNavbar}: HamburgerProps) => {
   return (
     <div className="hamburger-main-container">
       <div className="header-logo">MIKO</div>
-      <div onClick={handleOpenNavbar}>
+      <div onClick={toggleNavbar}>
         <FontAwesomeIcon icon={faBars} className="hamburger-logo" />
       </div>
     </div>

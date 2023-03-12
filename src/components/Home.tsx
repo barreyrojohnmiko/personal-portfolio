@@ -15,7 +15,8 @@ import { faX } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   const aboutSectionRef = useRef<HTMLDivElement>(null);
   const contactSectionRef = useRef<HTMLDivElement>(null);
-  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   const handleAboutClick = () => {
     if (aboutSectionRef.current) {
@@ -35,19 +36,15 @@ const Home = () => {
     }
   };
 
-  const handleOpenNavbar = () => {
-    setNavbarOpen(true);
-  };
-
-  const closeOpenNavbar = () => {
-    setNavbarOpen(false);
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
   };
 
   const renderNavbar = () => {
     return (
-      <div className="navbar-section">
+      <div className={`navbar-section ${isNavbarOpen ? "open" : ""}`}>
         <div className="navbar-header-container">
-          <div onClick={closeOpenNavbar}>
+          <div onClick={toggleNavbar}>
             <FontAwesomeIcon icon={faX} className="hamburger-logo" />
           </div>
         </div>
@@ -85,9 +82,9 @@ const Home = () => {
             handleContactClick={handleContactClick}
           />
         </div>
-        {navbarOpen ? renderNavbar() : null}
+        {renderNavbar()}
         <div className="header-hamburger-section">
-          <HeaderHamburger handleOpenNavbar={handleOpenNavbar} />
+          <HeaderHamburger toggleNavbar={toggleNavbar} />
         </div>
         <div className="introduction-section">
           <Introduction />
