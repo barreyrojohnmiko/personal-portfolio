@@ -1,22 +1,25 @@
-import React, { useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import "./Home.css";
 
-import About from "./About";
-import Sidebar from "../views/Sidebar";
-import Header from "../views/Header";
-import Contact from "./Contact";
 import Footer from "../views/Footer";
-import Introduction from "./Introduction";
+import Header from "../views/Header";
 import HeaderHamburger from "../views/HeaderHamburger";
+import Sidebar from "../views/Sidebar";
+import About from "./About";
+import Contact from "./Contact";
+import Introduction from "./Introduction";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { useDispatch, useSelector } from "react-redux";
+import { setIsNavbarOpen } from "../redux/components/Home/action";
 
 const Home = () => {
   const aboutSectionRef = useRef<HTMLDivElement>(null);
   const contactSectionRef = useRef<HTMLDivElement>(null);
-
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const dispatch: any = useDispatch();
+  const { isNavbarOpen } = useSelector((state: any) => state.homeReducers);
 
   const handleAboutClick = () => {
     if (aboutSectionRef.current) {
@@ -37,7 +40,7 @@ const Home = () => {
   };
 
   const toggleNavbar = () => {
-    setIsNavbarOpen(!isNavbarOpen);
+    dispatch(setIsNavbarOpen(!isNavbarOpen));
   };
 
   const renderNavbar = () => {
@@ -50,7 +53,12 @@ const Home = () => {
         </div>
         <div className="navbar-menu-container">
           <div className="navbar-btn-text-spacing">
-            <button className="navbar-btn-text navbar-btn-border" onClick={handleAboutClick}>About</button>
+            <button
+              className="navbar-btn-text navbar-btn-border"
+              onClick={handleAboutClick}
+            >
+              About
+            </button>
           </div>
           <div className="navbar-btn-text-spacing">
             <button className="navbar-btn-text navbar-btn-border">
@@ -61,7 +69,10 @@ const Home = () => {
             <button className="navbar-btn-text navbar-btn-border">Works</button>
           </div>
           <div className="navbar-btn-text-spacing">
-            <button className="navbar-btn-text navbar-btn-border" onClick={handleContactClick}>
+            <button
+              className="navbar-btn-text navbar-btn-border"
+              onClick={handleContactClick}
+            >
               Contact Me
             </button>
           </div>
@@ -77,13 +88,16 @@ const Home = () => {
       </div>
       <div className="content-main-section">
         <div className="header-section">
-          <Header handleAboutClick={handleAboutClick} handleContactClick={handleContactClick} />
+          <Header
+            handleAboutClick={handleAboutClick}
+            handleContactClick={handleContactClick}
+          />
         </div>
         <div className="header-hamburger-section">
           <HeaderHamburger toggleNavbar={toggleNavbar} />
           {renderNavbar()}
         </div>
-        <div className={`content-sub-section ${isNavbarOpen ? 'open' : ''}`}>
+        <div className={`content-sub-section ${isNavbarOpen ? "open" : ""}`}>
           <div className="introduction-section">
             <Introduction />
           </div>
