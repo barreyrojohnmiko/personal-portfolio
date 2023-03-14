@@ -40,9 +40,9 @@
     width: 100%;
   }
 
-  .header-section {
+  /* .header-section {
     display: none;
-  }
+  } */
 
   .content-sub-section.open {
     filter: blur(5px);

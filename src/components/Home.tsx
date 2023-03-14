@@ -3,23 +3,21 @@ import "./Home.css";
 
 import Footer from "../views/Footer";
 import Header from "../views/Header";
-import HeaderHamburger from "../views/HeaderHamburger";
 import Sidebar from "../views/Sidebar";
 import About from "./About";
 import Contact from "./Contact";
 import Introduction from "./Introduction";
 
-import { faX } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { useDispatch, useSelector } from "react-redux";
-import { setIsNavbarOpen } from "../redux/components/Home/action";
+import { setIsMobileView, setIsNavbarOpen } from "../redux/components/Home/action";
 
 const Home = () => {
+  const dispatch: any = useDispatch();
+  const { isNavbarOpen, isMobileView } = useSelector((state: any) => state.homeReducers);
+
   const aboutSectionRef = useRef<HTMLDivElement>(null);
   const contactSectionRef = useRef<HTMLDivElement>(null);
-  const dispatch: any = useDispatch();
-  const { isNavbarOpen } = useSelector((state: any) => state.homeReducers);
 
   const handleAboutClick = () => {
     if (aboutSectionRef.current) {
@@ -43,43 +41,20 @@ const Home = () => {
     dispatch(setIsNavbarOpen(!isNavbarOpen));
   };
 
-  const renderNavbar = () => {
-    return (
-      <div className={`navbar-section ${isNavbarOpen ? "open" : ""}`}>
-        <div className="navbar-header-container">
-          <div onClick={toggleNavbar}>
-            <FontAwesomeIcon icon={faX} className="hamburger-logo" />
-          </div>
-        </div>
-        <div className="navbar-menu-container">
-          <div className="navbar-btn-text-spacing">
-            <button
-              className="navbar-btn-text navbar-btn-border"
-              onClick={handleAboutClick}
-            >
-              About
-            </button>
-          </div>
-          <div className="navbar-btn-text-spacing">
-            <button className="navbar-btn-text navbar-btn-border">
-              Experience
-            </button>
-          </div>
-          <div className="navbar-btn-text-spacing">
-            <button className="navbar-btn-text navbar-btn-border">Works</button>
-          </div>
-          <div className="navbar-btn-text-spacing">
-            <button
-              className="navbar-btn-text navbar-btn-border"
-              onClick={handleContactClick}
-            >
-              Contact Me
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      const mobileView = 1023;
+      const screenWidth = window.innerWidth;
+      dispatch(setIsMobileView(screenWidth <= mobileView));
+    };
+
+    handleResize(); // Check initial width
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="home-container">
@@ -91,11 +66,8 @@ const Home = () => {
           <Header
             handleAboutClick={handleAboutClick}
             handleContactClick={handleContactClick}
+            toggleNavbar={toggleNavbar}
           />
-        </div>
-        <div className="header-hamburger-section">
-          <HeaderHamburger toggleNavbar={toggleNavbar} />
-          {renderNavbar()}
         </div>
         <div className={`content-sub-section ${isNavbarOpen ? "open" : ""}`}>
           <div className="introduction-section">
