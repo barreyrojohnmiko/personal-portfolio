@@ -1,4 +1,3 @@
-import React from "react";
 import "./AnimatedButton.css";
 
 interface AnimatedButtonProps {

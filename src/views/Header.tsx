@@ -12,8 +12,14 @@ interface HeaderProps {
   toggleNavbar: () => void;
 }
 
-const Header = ({ handleAboutClick, handleContactClick, toggleNavbar }: HeaderProps) => {
-  const { isNavbarOpen, isMobileView } = useSelector((state: any) => state.homeReducers);
+const Header = ({
+  handleAboutClick,
+  handleContactClick,
+  toggleNavbar,
+}: HeaderProps) => {
+  const { isNavbarOpen, isMobileView } = useSelector(
+    (state: any) => state.homeReducers
+  );
 
   const renderDesktopHeader = () => {
     return (
@@ -21,7 +27,10 @@ const Header = ({ handleAboutClick, handleContactClick, toggleNavbar }: HeaderPr
         <div className="header-logo">MIKO</div>
         <div className="header-menu">
           <div className="header-btn-text-spacing">
-            <button className="header-btn-text header-btn-border" onClick={handleAboutClick}>
+            <button
+              className="header-btn-text header-btn-border"
+              onClick={handleAboutClick}
+            >
               About
             </button>
           </div>
@@ -36,6 +45,17 @@ const Header = ({ handleAboutClick, handleContactClick, toggleNavbar }: HeaderPr
           <div className="header-btn-text-spacing">
             <AnimatedButton animatedButtonClick={handleContactClick} />
           </div>
+        </div>
+      </div>
+    );
+  };
+
+  const renderMobileHeader = () => {
+    return (
+      <div className="hamburger-main-container">
+        <div className="header-logo">MIKO</div>
+        <div onClick={toggleNavbar}>
+          <FontAwesomeIcon icon={faBars} className="hamburger-logo" />
         </div>
       </div>
     );
@@ -79,17 +99,6 @@ const Header = ({ handleAboutClick, handleContactClick, toggleNavbar }: HeaderPr
     );
   };
 
-  const renderMobileHeader = () => {
-    return (
-      <div className="hamburger-main-container">
-        <div className="header-logo">MIKO</div>
-        <div onClick={toggleNavbar}>
-          <FontAwesomeIcon icon={faBars} className="hamburger-logo" />
-        </div>
-      </div>
-    );
-  };
-
   return (
     <>
       {isMobileView ? (
@@ -98,9 +107,7 @@ const Header = ({ handleAboutClick, handleContactClick, toggleNavbar }: HeaderPr
           {renderNavbar()}
         </>
       ) : (
-        <>
-          {renderDesktopHeader()}
-        </>
+        <>{renderDesktopHeader()}</>
       )}
     </>
   );

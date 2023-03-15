@@ -22,7 +22,7 @@ const Home = () => {
   const handleAboutClick = () => {
     if (aboutSectionRef.current) {
       window.scrollTo({
-        top: aboutSectionRef.current.offsetTop + 230,
+        top: isMobileView ? aboutSectionRef.current.offsetTop + 230 : aboutSectionRef.current.offsetTop - 20,
         behavior: "smooth",
       });
     }
