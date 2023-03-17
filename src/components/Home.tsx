@@ -9,21 +9,39 @@ import Contact from "./Contact";
 import Introduction from "./Introduction";
 import Works from "./Works";
 
-
 import { useDispatch, useSelector } from "react-redux";
-import { setIsMobileView, setIsNavbarOpen } from "../redux/components/Home/action";
+import {
+  setIsMobileView,
+  setIsNavbarOpen,
+} from "../redux/components/Home/action";
 
 const Home = () => {
   const dispatch: any = useDispatch();
-  const { isNavbarOpen, isMobileView } = useSelector((state: any) => state.homeReducers);
+  const { isNavbarOpen, isMobileView } = useSelector(
+    (state: any) => state.homeReducers
+  );
 
   const aboutSectionRef = useRef<HTMLDivElement>(null);
   const contactSectionRef = useRef<HTMLDivElement>(null);
+  const worksSectionRef = useRef<HTMLDivElement>(null);
 
   const handleAboutClick = () => {
     if (aboutSectionRef.current) {
       window.scrollTo({
-        top: isMobileView ? aboutSectionRef.current.offsetTop + 230 : aboutSectionRef.current.offsetTop - 20,
+        top: isMobileView
+          ? aboutSectionRef.current.offsetTop + 230
+          : aboutSectionRef.current.offsetTop - 20,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleWorksClick = () => {
+    if (worksSectionRef.current) {
+      window.scrollTo({
+        top: isMobileView
+          ? worksSectionRef.current.offsetTop + 230
+          : worksSectionRef.current.offsetTop - 20,
         behavior: "smooth",
       });
     }
@@ -66,6 +84,7 @@ const Home = () => {
         <div className="header-section">
           <Header
             handleAboutClick={handleAboutClick}
+            handleWorksClick={handleWorksClick}
             handleContactClick={handleContactClick}
             toggleNavbar={toggleNavbar}
           />
@@ -78,7 +97,7 @@ const Home = () => {
             <About aboutSectionRef={aboutSectionRef} />
           </div>
           <div className="works-section">
-            <Works />
+            <Works worksSectionRef={worksSectionRef} />
           </div>
           <div className="contact-section">
             <Contact contactSectionRef={contactSectionRef} />

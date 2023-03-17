@@ -12,3 +12,9 @@
   align-items: center;
   gap: 30px;
 }
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+  .works-panel-container {
+    flex-direction: column;
+  }
+}

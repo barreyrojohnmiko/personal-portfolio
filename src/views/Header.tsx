@@ -8,12 +8,14 @@ import { useSelector } from "react-redux";
 
 interface HeaderProps {
   handleAboutClick: () => void;
+  handleWorksClick: () => void;
   handleContactClick: () => void;
   toggleNavbar: () => void;
 }
 
 const Header = ({
   handleAboutClick,
+  handleWorksClick,
   handleContactClick,
   toggleNavbar,
 }: HeaderProps) => {
@@ -40,7 +42,7 @@ const Header = ({
             </button>
           </div>
           <div className="header-btn-text-spacing">
-            <button className="header-btn-text header-btn-border">Works</button>
+            <button className="header-btn-text header-btn-border" onClick={handleWorksClick}>Works</button>
           </div>
           <div className="header-btn-text-spacing">
             <AnimatedButton animatedButtonClick={handleContactClick} />
@@ -84,7 +86,7 @@ const Header = ({
             </button>
           </div>
           <div className="navbar-btn-text-spacing">
-            <button className="navbar-btn-text navbar-btn-border">Works</button>
+            <button className="navbar-btn-text navbar-btn-border" onClick={handleWorksClick}>Works</button>
           </div>
           <div className="navbar-btn-text-spacing">
             <button
