@@ -7,6 +7,7 @@ import Sidebar from "../views/Sidebar";
 import About from "./About";
 import Contact from "./Contact";
 import Introduction from "./Introduction";
+import Works from "./Works";
 
 
 import { useDispatch, useSelector } from "react-redux";
@@ -75,6 +76,9 @@ const Home = () => {
           </div>
           <div className="about-section">
             <About aboutSectionRef={aboutSectionRef} />
+          </div>
+          <div className="works-section">
+            <Works />
           </div>
           <div className="contact-section">
             <Contact contactSectionRef={contactSectionRef} />

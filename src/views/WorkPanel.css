@@ -1,0 +1,79 @@
+.work-panel-main-container {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 350px;
+  background: #112240;
+  border-radius: 20px;
+  position: relative;
+}
+
+.work-panel-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  height: 50px;
+}
+
+.right-panel-content {
+  display: flex;
+  gap: 20px;
+}
+
+.work-panel-left-logo {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #c094d3;
+}
+
+.work-panel-right-logo {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ccd6f6;
+}
+
+.work-panel-body-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.panel-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+}
+
+.panel-description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.work-panel-footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+  gap: 25px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 20px;
+}
+
+.footer-label {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8892b0;
+}
