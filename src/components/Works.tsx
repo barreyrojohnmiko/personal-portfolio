@@ -1,6 +1,7 @@
 import React, { RefObject } from "react";
 import "./Works.css";
 
+import { useSelector } from "react-redux";
 import WorkPanel from "../views/WorkPanel";
 
 type WorksProps = {
@@ -8,11 +9,13 @@ type WorksProps = {
 };
 
 const Works: React.FC<WorksProps> = ({ worksSectionRef }) => {
+  const { panelData1 } = useSelector((state: any) => state.worksReducers);
+
   return (
     <>
       <div className="works-main-container" ref={worksSectionRef}>
         <div className="works-panel-container">
-          <WorkPanel />
+          <WorkPanel {...panelData1}/>
         </div>
       </div>
     </>

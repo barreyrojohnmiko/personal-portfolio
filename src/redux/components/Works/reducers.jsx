@@ -3,8 +3,9 @@ import { SET_PANEL_DATA_1 } from "./action";
 const initialState = {
   panelData1: {
     panelLabel: "Notes",
-    panelDescription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nostrum quaerat velit recusandae exercitationem doloremque, laudantium consectetur eaque.",
+    panelDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nostrum quaerat velit recusandae exercitationem doloremque, laudantium consectetur eaque.",
+    githubLink: "https://github.com/barreyrojohnmiko/RJSNotes",
+    externalLink: "https://barreyrojohnmiko.github.io/RJSNotes/",
     techUsed1: "React",
     techUsed2: "Redux",
   },
