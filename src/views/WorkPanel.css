@@ -1,8 +1,8 @@
 .work-panel-main-container {
   display: flex;
   flex-direction: column;
-  height: 350px;
-  width: 350px;
+  height: 360px;
+  width: 30%;
   background: #112240;
   border-radius: 20px;
   position: relative;
@@ -43,6 +43,7 @@
   flex-direction: column;
   padding-left: 25px;
   padding-right: 25px;
+  gap: 5px;
 }
 
 .panel-title {
@@ -57,8 +58,8 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  color: #cccccc;
+  font-size: 15px;
+  color: rgba(204, 214, 246, 0.7);
 }
 
 .work-panel-footer {
@@ -77,4 +78,11 @@
   font-weight: 400;
   font-size: 14px;
   color: #8892b0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+  .work-panel-main-container {
+    height: 400px;
+    width: 100%;
+  }
 }

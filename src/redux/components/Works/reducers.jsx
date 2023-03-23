@@ -3,7 +3,7 @@ import { SET_PANEL_DATA_1 } from "./action";
 const initialState = {
   panelData1: {
     panelLabel: "Notes",
-    panelDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nostrum quaerat velit recusandae exercitationem doloremque, laudantium consectetur eaque.",
+    panelDescription: "Effortlessly allows you to create, edit, and organize your notes. With backup feature that ensures that your notes are always secure, with the flexibility to export your local storage values at any time.",
     githubLink: "https://github.com/barreyrojohnmiko/RJSNotes",
     externalLink: "https://barreyrojohnmiko.github.io/RJSNotes/",
     techUsed1: "React",
