@@ -1,10 +1,24 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9998;
+  transition: top 0.3s ease-in-out;
+  background: #0a1930;
+}
+
+.header--hidden {
+  top: -100%;
+}
+
 .header-main-container {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 50px;
-  margin-left: -70px;
+  padding: 0 50px 0 50px;
+  background-color: #0a1930;
 }
 
 .header-logo {
@@ -69,5 +83,55 @@
   .header-main-container {
     margin-left: auto;
     padding-right: 0;
+  }
+
+  .navbar-section {
+    position: fixed;
+    top: 0;
+    right: -75%;
+    bottom: 0;
+    width: 75%;
+    background-color: #112240;
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+  }
+
+  .navbar-section.open {
+    right: 0;
+  }
+
+  .navbar-menu-container {
+    height: calc(100% - 190px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-btn-text-spacing {
+    margin-left: 4%;
+  }
+
+  .navbar-btn-text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ccd6f6;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .navbar-btn-border {
+    background: transparent;
+    border: none;
+  }
+
+  .navbar-header-container {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 25px;
   }
 }

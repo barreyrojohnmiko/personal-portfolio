@@ -35,10 +35,6 @@
   .footer-section {
     display: none;
   }
-
-  .header-hamburger-section {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 1023px) {
@@ -48,10 +44,6 @@
 
   .content-sub-section.open {
     filter: blur(5px);
-  }
-
-  .header-hamburger-section {
-    margin-bottom: 10%;
   }
 
   .introduction-section {
@@ -65,55 +57,5 @@
 
   .contact-section {
     margin-bottom: 30%;
-  }
-
-  .navbar-section {
-    position: fixed;
-    top: 0;
-    right: -75%;
-    bottom: 0;
-    width: 75%;
-    background-color: #112240;
-    transition: right 0.3s ease-in-out;
-    z-index: 100;
-  }
-
-  .navbar-section.open {
-    right: 0;
-  }
-
-  .navbar-menu-container {
-    height: calc(100% - 190px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navbar-btn-text-spacing {
-    margin-left: 4%;
-  }
-
-  .navbar-btn-text {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #ccd6f6;
-    margin-top: 20%;
-    margin-bottom: 20%;
-  }
-
-  .navbar-btn-border {
-    background: transparent;
-    border: none;
-  }
-
-  .navbar-header-container {
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 25px;
   }
 }

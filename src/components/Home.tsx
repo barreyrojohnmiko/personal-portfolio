@@ -29,7 +29,7 @@ const Home = () => {
     if (aboutSectionRef.current) {
       window.scrollTo({
         top: isMobileView
-          ? aboutSectionRef.current.offsetTop + 230
+          ? aboutSectionRef.current.offsetTop + 30
           : aboutSectionRef.current.offsetTop - 20,
         behavior: "smooth",
       });
@@ -40,7 +40,7 @@ const Home = () => {
     if (worksSectionRef.current) {
       window.scrollTo({
         top: isMobileView
-          ? worksSectionRef.current.offsetTop + 230
+          ? worksSectionRef.current.offsetTop + 30
           : worksSectionRef.current.offsetTop - 20,
         behavior: "smooth",
       });
