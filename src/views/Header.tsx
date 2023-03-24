@@ -63,12 +63,16 @@ const Header = (props: HeaderObject) => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      dispatch(setIsHeaderVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10));
+      dispatch(setIsHeaderVisible(prevScrollPos > currentScrollPos || currentScrollPos < 5));
       dispatch(setPrevScrollPos(currentScrollPos));
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("touchmove", handleScroll); // Add touchmove event
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("touchmove", handleScroll); // Remove touchmove event
+    };
   }, [prevScrollPos, isHeaderVisible]);
 
   useEffect(() => {
