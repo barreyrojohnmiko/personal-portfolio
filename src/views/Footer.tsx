@@ -10,7 +10,7 @@ const Footer = () => {
         <div onClick={() => window.open("https://www.facebook.com/JMDBarreyro/")}>
           <FontAwesomeIcon icon={faFacebookF} className="footer-logo" />
         </div>
-        <div onClick={() => window.open("https://www.linkedin.com/in/john-miko-barreyro-38463225b/")}>
+        <div onClick={() => window.open("https://www.linkedin.com/in/barreyrojohnmiko/")}>
           <FontAwesomeIcon icon={faLinkedin} className="footer-logo" />
         </div>
         <div onClick={() => window.open("https://github.com/barreyrojohnmiko")}>
