@@ -1,9 +1,7 @@
 import React, { RefObject } from "react";
 import "./About.css";
 
-type AboutProps = {
-  aboutSectionRef: RefObject<HTMLDivElement>;
-};
+type AboutProps = { aboutSectionRef: RefObject<HTMLDivElement> };
 
 const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
   return (

@@ -10,16 +10,11 @@ import Introduction from "./Introduction";
 import Works from "./Works";
 
 import { useDispatch, useSelector } from "react-redux";
-import {
-  setIsMobileView,
-  setIsNavbarOpen,
-} from "../redux/components/Home/action";
+import { setIsMobileView, setIsNavbarOpen } from "../redux/components/Home/action";
 
 const Home = () => {
   const dispatch: any = useDispatch();
-  const { isNavbarOpen, isMobileView } = useSelector(
-    (state: any) => state.homeReducers
-  );
+  const { isNavbarOpen, isMobileView } = useSelector((state: any) => state.homeReducers);
 
   const aboutSectionRef = useRef<HTMLDivElement>(null);
   const contactSectionRef = useRef<HTMLDivElement>(null);
@@ -30,7 +25,7 @@ const Home = () => {
       window.scrollTo({
         top: isMobileView
           ? aboutSectionRef.current.offsetTop + 30
-          : aboutSectionRef.current.offsetTop - 130,
+          : aboutSectionRef.current.offsetTop - 110,
         behavior: "smooth",
       });
     }
@@ -41,7 +36,7 @@ const Home = () => {
       window.scrollTo({
         top: isMobileView
           ? worksSectionRef.current.offsetTop + 30
-          : worksSectionRef.current.offsetTop - 130,
+          : worksSectionRef.current.offsetTop - 110,
         behavior: "smooth",
       });
     }
@@ -90,13 +85,13 @@ const Home = () => {
           />
         </div>
         <div className={`content-sub-section ${isNavbarOpen ? "open" : ""}`}>
-          <div className="introduction-section">
+          <div className="introduction-section content-section-padding">
             <Introduction />
           </div>
-          <div className="about-section">
+          <div className="about-section content-section-padding">
             <About aboutSectionRef={aboutSectionRef} />
           </div>
-          <div className="works-section">
+          <div className="works-section content-section-padding">
             <Works worksSectionRef={worksSectionRef} />
           </div>
           <div className="contact-section">

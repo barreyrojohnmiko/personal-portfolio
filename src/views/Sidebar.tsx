@@ -1,8 +1,6 @@
 import "./Sidebar.css";
 
-import {
-  faFacebookF, faGithub, faLinkedin
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Sidebar = () => {

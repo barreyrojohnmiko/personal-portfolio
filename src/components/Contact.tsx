@@ -3,9 +3,7 @@ import "./Contact.css";
 
 import SendMessageButton from "../views/SendMessageButton";
 
-type ContactProps = {
-  contactSectionRef: RefObject<HTMLDivElement>;
-};
+type ContactProps = { contactSectionRef: RefObject<HTMLDivElement> };
 
 const Contact: React.FC<ContactProps> = ({ contactSectionRef }) => {
   return (

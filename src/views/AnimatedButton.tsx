@@ -1,12 +1,9 @@
 import "./AnimatedButton.css";
+import AnimatedButtonObject from "../objects/interface/AnimatedButtonObject";
 
-interface AnimatedButtonProps {
-  animatedButtonClick: () => void;
-}
-
-const AnimatedButton = ({ animatedButtonClick }: AnimatedButtonProps) => {
+const AnimatedButton = (props: AnimatedButtonObject) => {
   return (
-    <div onClick={animatedButtonClick}>
+    <div onClick={props.animatedButtonClick}>
       <button className="animated-button">
         <span></span>
         <span></span>

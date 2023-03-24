@@ -1,11 +1,7 @@
-import React from "react";
 import "./WorkPanel.css";
 
-import {
-  faLaptopCode,
-  faArrowUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUpRightFromSquare, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PanelDetailsObject from "../objects/interface/PanelDetailsObject";
 

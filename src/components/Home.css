@@ -13,21 +13,9 @@
   margin-bottom: 10%;
 }
 
-.introduction-section {
-  padding-left: 15%;
-  padding-right: 15%;
-  margin-bottom: 30%;
-}
-
-.about-section {
-  padding-left: 15%;
-  padding-right: 15%;
-  margin-bottom: 30%;
-}
-
-.works-section {
-  padding-left: 15%;
-  padding-right: 15%;
+.content-section-padding {
+  padding-left: 12.5%;
+  padding-right: 12.5%;
   margin-bottom: 30%;
 }
 
