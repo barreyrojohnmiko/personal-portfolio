@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import Home from "./components/Home";
+import Home from "./components/home/Home";
 
 const App = () => {
   return (

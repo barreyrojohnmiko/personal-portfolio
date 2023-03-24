@@ -1,16 +1,16 @@
 import { useEffect, useRef } from "react";
 import "./Home.css";
 
-import Footer from "../views/Footer";
-import Header from "../views/Header";
-import Sidebar from "../views/Sidebar";
-import About from "./About";
-import Contact from "./Contact";
-import Introduction from "./Introduction";
-import Works from "./Works";
+import Footer from "../../views/Footer";
+import Header from "../../views/Header";
+import Sidebar from "../../views/Sidebar";
+import About from "../about/About";
+import Contact from "../contact/Contact";
+import Introduction from "../introduction/Introduction";
+import Works from "../works/Works";
 
 import { useDispatch, useSelector } from "react-redux";
-import { setIsMobileView, setIsNavbarOpen } from "../redux/components/Home/action";
+import { setIsMobileView, setIsNavbarOpen } from "../../redux/components/home/action";
 
 const Home = () => {
   const dispatch: any = useDispatch();
