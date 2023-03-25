@@ -10,7 +10,14 @@
 }
 
 .header-section {
-  margin-bottom: 10%;
+  margin-bottom: 10.5%;
+}
+
+.introduction-section {
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 18%;
+  margin-left: -120px;
 }
 
 .content-section-padding {
@@ -34,8 +41,9 @@
   }
 
   .introduction-section {
-    margin-top: 39%;
+    margin-top: 27%;
     margin-bottom: 80%;
+    margin-left: 0;
   }
 
   .sidebar-section {

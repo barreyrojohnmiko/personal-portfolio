@@ -90,7 +90,7 @@ const Home = () => {
           />
         </div>
         <div className={`content-sub-section ${isNavbarOpen ? "open" : ""}`}>
-          <div className="introduction-section content-section-padding">
+          <div className="introduction-section">
             <Introduction />
           </div>
           <div className="about-section content-section-padding">
