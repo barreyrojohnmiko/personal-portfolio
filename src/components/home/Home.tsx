@@ -51,6 +51,10 @@ const Home = () => {
     }
   };
 
+  const handleResumeClick = () => {
+    window.open('https://drive.google.com/file/d/1ij-OKSoNlihLnJBRB1cFXT8Wb3ukocwL/view?usp=share_link', '_blank');
+  }
+
   const toggleNavbar = () => {
     dispatch(setIsNavbarOpen(!isNavbarOpen));
   };
@@ -81,6 +85,7 @@ const Home = () => {
             handleAboutClick={handleAboutClick}
             handleWorksClick={handleWorksClick}
             handleContactClick={handleContactClick}
+            handleResumeClick={handleResumeClick}
             toggleNavbar={toggleNavbar}
           />
         </div>

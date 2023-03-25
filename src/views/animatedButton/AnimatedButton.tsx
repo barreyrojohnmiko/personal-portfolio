@@ -8,7 +8,7 @@ const AnimatedButton = (props: AnimatedButtonObject) => {
         <span></span>
         <span></span>
         <span></span>
-        <span></span> Contact Me
+        <span></span> Resume
       </button>
     </div>
   );

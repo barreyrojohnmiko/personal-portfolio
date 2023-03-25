@@ -6,48 +6,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AnimatedButton from "../animatedButton/AnimatedButton";
 
 import { useDispatch, useSelector } from "react-redux";
-import {
-  setIsHeaderVisible,
-  setPrevScrollPos,
-} from "../../redux/views/header/action";
+import { setIsHeaderVisible, setPrevScrollPos } from "../../redux/views/header/action";
 
 import HeaderObject from "../../objects/interface/HeaderObject";
 
 const Header = (props: HeaderObject) => {
   const dispatch: any = useDispatch();
-  const { isNavbarOpen, isMobileView } = useSelector(
-    (state: any) => state.homeReducers
-  );
-  const { isHeaderVisible, prevScrollPos } = useSelector(
-    (state: any) => state.headerReducers
-  );
+  const { isNavbarOpen, isMobileView } = useSelector((state: any) => state.homeReducers);
+  const { isHeaderVisible, prevScrollPos } = useSelector((state: any) => state.headerReducers);
 
   const renderDesktopHeader = () => {
     return (
-      <header
-        className={`header ${
-          isHeaderVisible ? "header--visible" : "header--hidden"
-        }`}
-      >
+      <header className={`header ${ isHeaderVisible ? "header--visible" : "header--hidden" }`}>
         <div className="header-main-container">
           <div className="header-logo">MIKO</div>
           <div className="header-menu">
-            <button
-              className="header-btn-text header-btn-border"
-              onClick={props.handleAboutClick}
-            >
+            <button className="header-btn-text header-btn-border" onClick={props.handleAboutClick}>
               About
             </button>
-            {/* <button className="header-btn-text header-btn-border">
-              Experience
-            </button> */}
-            <button
-              className="header-btn-text header-btn-border"
-              onClick={props.handleWorksClick}
-            >
+            <button className="header-btn-text header-btn-border" onClick={props.handleWorksClick}>
               Works
             </button>
-            <AnimatedButton animatedButtonClick={props.handleContactClick} />
+            <button className="header-btn-text header-btn-border" onClick={props.handleContactClick}>
+              Contact
+            </button>
+            <AnimatedButton animatedButtonClick={props.handleResumeClick} />
           </div>
         </div>
       </header>
@@ -111,7 +94,7 @@ const Header = (props: HeaderObject) => {
           </div>
         </div>
         <div className="navbar-menu-container">
-          <div className="navbar-btn-text-spacing">
+          <div>
             <button
               className="navbar-btn-text navbar-btn-border"
               onClick={props.handleAboutClick}
@@ -119,12 +102,12 @@ const Header = (props: HeaderObject) => {
               About
             </button>
           </div>
-          <div className="navbar-btn-text-spacing">
+          <div>
             <button className="navbar-btn-text navbar-btn-border">
               Experience
             </button>
           </div>
-          <div className="navbar-btn-text-spacing">
+          <div>
             <button
               className="navbar-btn-text navbar-btn-border"
               onClick={props.handleWorksClick}
@@ -132,12 +115,20 @@ const Header = (props: HeaderObject) => {
               Works
             </button>
           </div>
-          <div className="navbar-btn-text-spacing">
+          <div>
             <button
               className="navbar-btn-text navbar-btn-border"
               onClick={props.handleContactClick}
             >
-              Contact Me
+              Contact
+            </button>
+          </div>
+          <div>
+            <button
+              className="navbar-btn-text navbar-btn-border"
+              onClick={props.handleContactClick}
+            >
+              Resume
             </button>
           </div>
         </div>
