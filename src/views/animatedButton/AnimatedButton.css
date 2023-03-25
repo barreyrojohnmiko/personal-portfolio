@@ -1,11 +1,11 @@
 .animated-button {
   position: relative;
-  padding: 1em 1.8em;
+  padding: .75em 1.8em;
   outline: none;
   border: 1px solid #303030;
   background: #212121;
   color: #ccd6f6;
-  font-size: 14px;
+  font-size: 16px;
   overflow: hidden;
   transition: 0.2s;
   border-radius: 20px;

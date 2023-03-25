@@ -15,7 +15,7 @@ const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
               a naturally curious person, I became interested in coding by
               wondering on how I could hack into my neighbors' Wi-Fi. Although
               this wasn't a part of my formal education in Computer Science, I
-              found turning my designs into functional websites very fulfilling
+              found turning my designs into functional websites and applications very fulfilling
               and enjoyable, which ultimately led me to pursue programming as a
               career.
             </div>
@@ -25,7 +25,7 @@ const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
             <div className="about-me-text">
               Today, as a full-time front-end developer with a specialization in
               Android development, I have extensive experience working with
-              various frameworks such as Angular and React, as well as essential
+              various frameworks such as React and Angular, as well as essential
               libraries like Redux and Axios. I'm also proficient in web
               development and have a broad range of skills that extend beyond
               just mobile development.

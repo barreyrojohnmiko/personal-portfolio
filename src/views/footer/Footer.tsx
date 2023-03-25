@@ -1,20 +1,23 @@
 import "./Footer.css";
 
-import { faFacebookF, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
     <div className="footer-main-container">
       <div className="footer-sub-container">
+        <div onClick={() => window.open("https://github.com/barreyrojohnmiko")}>
+          <FontAwesomeIcon icon={faGithub} className="footer-logo" />
+        </div>
         <div onClick={() => window.open("https://www.facebook.com/JMDBarreyro/")}>
           <FontAwesomeIcon icon={faFacebookF} className="footer-logo" />
         </div>
+        <div onClick={() => window.open("https://www.instagram.com/barreyro_miko/")}>
+          <FontAwesomeIcon icon={faInstagram} className="footer-logo" />
+        </div>
         <div onClick={() => window.open("https://www.linkedin.com/in/barreyrojohnmiko/")}>
           <FontAwesomeIcon icon={faLinkedin} className="footer-logo" />
-        </div>
-        <div onClick={() => window.open("https://github.com/barreyrojohnmiko")}>
-          <FontAwesomeIcon icon={faGithub} className="footer-logo" />
         </div>
       </div>
       <div className="footer-text">

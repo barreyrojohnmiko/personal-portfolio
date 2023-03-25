@@ -38,6 +38,10 @@
   color: #ccd6f6;
 }
 
+.work-panel-right-logo:hover {
+  color: #c094d3;
+}
+
 .work-panel-body-container {
   display: flex;
   flex-direction: column;
@@ -84,5 +88,11 @@
   .work-panel-main-container {
     height: 400px;
     width: 100%;
+  }
+}
+
+@media screen and (min-height: 1023px) {
+  .work-panel-main-container {
+    width: 45%;
   }
 }

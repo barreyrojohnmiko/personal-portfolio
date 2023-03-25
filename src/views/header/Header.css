@@ -25,7 +25,7 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 27px;
+  font-size: 26px;
   color: #ccd6f6;
 }
 
@@ -34,17 +34,14 @@
   justify-content: flex-end;
   align-items: center;
   width: 80.63380281690141%;
-}
-
-.header-btn-text-spacing {
-  margin-left: 4%;
+  gap: 4%;
 }
 
 .header-btn-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   color: #ccd6f6;
 }
 
@@ -68,7 +65,7 @@
 .hamburger-logo {
   height: 25px;
   width: 25px;
-  color: #CCD6F6;
+  color: #ccd6f6;
 }
 
 .hamburger-text {

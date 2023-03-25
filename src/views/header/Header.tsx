@@ -6,40 +6,48 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AnimatedButton from "../animatedButton/AnimatedButton";
 
 import { useDispatch, useSelector } from "react-redux";
-import { setIsHeaderVisible, setPrevScrollPos } from "../../redux/views/header/action";
+import {
+  setIsHeaderVisible,
+  setPrevScrollPos,
+} from "../../redux/views/header/action";
 
 import HeaderObject from "../../objects/interface/HeaderObject";
 
 const Header = (props: HeaderObject) => {
   const dispatch: any = useDispatch();
-  const { isNavbarOpen, isMobileView } = useSelector((state: any) => state.homeReducers);
-  const { isHeaderVisible, prevScrollPos } = useSelector((state: any) => state.headerReducers);
+  const { isNavbarOpen, isMobileView } = useSelector(
+    (state: any) => state.homeReducers
+  );
+  const { isHeaderVisible, prevScrollPos } = useSelector(
+    (state: any) => state.headerReducers
+  );
 
   const renderDesktopHeader = () => {
     return (
-      <header className={`header ${isHeaderVisible ? "header--visible" : "header--hidden"}`}>
+      <header
+        className={`header ${
+          isHeaderVisible ? "header--visible" : "header--hidden"
+        }`}
+      >
         <div className="header-main-container">
           <div className="header-logo">MIKO</div>
           <div className="header-menu">
-            <div className="header-btn-text-spacing">
-              <button
-                className="header-btn-text header-btn-border"
-                onClick={props.handleAboutClick}
-              >
-                About
-              </button>
-            </div>
-            <div className="header-btn-text-spacing">
-              <button className="header-btn-text header-btn-border">
-                Experience
-              </button>
-            </div>
-            <div className="header-btn-text-spacing">
-              <button className="header-btn-text header-btn-border" onClick={props.handleWorksClick}>Works</button>
-            </div>
-            <div className="header-btn-text-spacing">
-              <AnimatedButton animatedButtonClick={props.handleContactClick} />
-            </div>
+            <button
+              className="header-btn-text header-btn-border"
+              onClick={props.handleAboutClick}
+            >
+              About
+            </button>
+            {/* <button className="header-btn-text header-btn-border">
+              Experience
+            </button> */}
+            <button
+              className="header-btn-text header-btn-border"
+              onClick={props.handleWorksClick}
+            >
+              Works
+            </button>
+            <AnimatedButton animatedButtonClick={props.handleContactClick} />
           </div>
         </div>
       </header>
@@ -48,7 +56,11 @@ const Header = (props: HeaderObject) => {
 
   const renderMobileHeader = () => {
     return (
-      <header className={`header ${isHeaderVisible ? "header--visible" : "header--hidden"}`}>
+      <header
+        className={`header ${
+          isHeaderVisible ? "header--visible" : "header--hidden"
+        }`}
+      >
         <div className="hamburger-main-container">
           <div className="header-logo">MIKO</div>
           <div onClick={props.toggleNavbar}>
@@ -63,7 +75,11 @@ const Header = (props: HeaderObject) => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      dispatch(setIsHeaderVisible(prevScrollPos > currentScrollPos || currentScrollPos < 5));
+      dispatch(
+        setIsHeaderVisible(
+          prevScrollPos > currentScrollPos || currentScrollPos < 5
+        )
+      );
       dispatch(setPrevScrollPos(currentScrollPos));
     };
 
@@ -76,9 +92,13 @@ const Header = (props: HeaderObject) => {
   }, [prevScrollPos, isHeaderVisible]);
 
   useEffect(() => {
-    const introductionSection = document.querySelector(".introduction-section") as HTMLElement;
+    const introductionSection = document.querySelector(
+      ".introduction-section"
+    ) as HTMLElement;
     if (introductionSection) {
-      introductionSection.style.paddingTop = `${isHeaderVisible ? "140px" : "45px"}`;
+      introductionSection.style.paddingTop = `${
+        isHeaderVisible ? "140px" : "45px"
+      }`;
     }
   }, [isHeaderVisible]);
 
@@ -92,7 +112,10 @@ const Header = (props: HeaderObject) => {
         </div>
         <div className="navbar-menu-container">
           <div className="navbar-btn-text-spacing">
-            <button className="navbar-btn-text navbar-btn-border" onClick={props.handleAboutClick}>
+            <button
+              className="navbar-btn-text navbar-btn-border"
+              onClick={props.handleAboutClick}
+            >
               About
             </button>
           </div>
@@ -102,10 +125,18 @@ const Header = (props: HeaderObject) => {
             </button>
           </div>
           <div className="navbar-btn-text-spacing">
-            <button className="navbar-btn-text navbar-btn-border" onClick={props.handleWorksClick}>Works</button>
+            <button
+              className="navbar-btn-text navbar-btn-border"
+              onClick={props.handleWorksClick}
+            >
+              Works
+            </button>
           </div>
           <div className="navbar-btn-text-spacing">
-            <button className="navbar-btn-text navbar-btn-border" onClick={props.handleContactClick}>
+            <button
+              className="navbar-btn-text navbar-btn-border"
+              onClick={props.handleContactClick}
+            >
               Contact Me
             </button>
           </div>
