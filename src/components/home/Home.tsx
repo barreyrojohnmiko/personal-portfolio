@@ -31,10 +31,6 @@ const Home = () => {
     }
   };
 
-  const handleExperienceClick = () => {
-
-  }
-
   const handleWorksClick = () => {
     if (worksSectionRef.current) {
       window.scrollTo({
@@ -87,7 +83,6 @@ const Home = () => {
         <div className="header-section">
           <Header
             handleAboutClick={handleAboutClick}
-            handleExperienceClick={handleExperienceClick}
             handleWorksClick={handleWorksClick}
             handleContactClick={handleContactClick}
             handleResumeClick={handleResumeClick}

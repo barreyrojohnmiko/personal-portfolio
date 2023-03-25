@@ -24,9 +24,6 @@ const Header = (props: HeaderObject) => {
             <button className="header-btn-text header-btn-border" onClick={props.handleAboutClick}>
               About
             </button>
-            <button className="header-btn-text header-btn-border" onClick={props.handleExperienceClick}>
-              Experience
-            </button>
             <button className="header-btn-text header-btn-border" onClick={props.handleWorksClick}>
               Works
             </button>
@@ -100,11 +97,6 @@ const Header = (props: HeaderObject) => {
           <div>
             <button className="navbar-btn-text navbar-btn-border" onClick={props.handleAboutClick}>
               About
-            </button>
-          </div>
-          <div>
-            <button className="navbar-btn-text navbar-btn-border" onClick={props.handleExperienceClick}>
-              Experience
             </button>
           </div>
           <div>

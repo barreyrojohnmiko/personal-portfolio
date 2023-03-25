@@ -1,8 +1,10 @@
 import "./SendMessageButton.css";
 
-const SendMessageButton = () => {
+import SendMessageButtonObject from "../../objects/interface/SendMessageButtonObject";
+
+const SendMessageButton = (props: SendMessageButtonObject) => {
   return (
-    <button className="send-message-button">
+    <button className="send-message-button" onClick={props.handleSendMessageButtonClick}>
       <span>Send Message</span>
       <div className="send-message-icon">
         <svg

@@ -5,6 +5,12 @@ import SendMessageButton from "../../views/sendMessageButton/SendMessageButton";
 
 type ContactProps = { contactSectionRef: RefObject<HTMLDivElement> };
 
+const handleSendMessageButtonClick = () => {
+  window.open('https://mail.google.com/mail/?view=cm&fs=1&to=barreyrojohnmiko@gmail.com',
+    '_blank', 'noopener,noreferrer'
+  );
+}
+
 const Contact: React.FC<ContactProps> = ({ contactSectionRef }) => {
   return (
     <div className="contact-main-container" ref={contactSectionRef}>
@@ -12,7 +18,7 @@ const Contact: React.FC<ContactProps> = ({ contactSectionRef }) => {
       <div className="contact-description">
         Interested in working together? Don't hesitate to leave me a message.
       </div>
-      <SendMessageButton />
+      <SendMessageButton handleSendMessageButtonClick={handleSendMessageButtonClick}/>
     </div>
   );
 };
