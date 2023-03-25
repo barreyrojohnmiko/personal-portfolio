@@ -79,6 +79,7 @@ ul {
 .developer-photo {
   height: 280px;
   width: 280px;
+  border-radius: 20px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 1023px) {
