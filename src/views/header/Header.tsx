@@ -3,12 +3,12 @@ import "./Header.css";
 
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AnimatedButton from "./AnimatedButton";
+import AnimatedButton from "../animatedButton/AnimatedButton";
 
 import { useDispatch, useSelector } from "react-redux";
-import { setIsHeaderVisible, setPrevScrollPos } from "../redux/views/header/action";
+import { setIsHeaderVisible, setPrevScrollPos } from "../../redux/views/header/action";
 
-import HeaderObject from "../objects/interface/HeaderObject";
+import HeaderObject from "../../objects/interface/HeaderObject";
 
 const Header = (props: HeaderObject) => {
   const dispatch: any = useDispatch();

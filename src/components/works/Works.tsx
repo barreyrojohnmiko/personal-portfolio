@@ -2,7 +2,7 @@ import React, { RefObject } from "react";
 import "./Works.css";
 
 import { useSelector } from "react-redux";
-import WorkPanel from "../../views/WorkPanel";
+import WorkPanel from "../../views/workPanel/WorkPanel";
 
 type WorksProps = { worksSectionRef: RefObject<HTMLDivElement> };
 

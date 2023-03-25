@@ -3,7 +3,7 @@ import "./WorkPanel.css";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import PanelDetailsObject from "../objects/interface/PanelDetailsObject";
+import PanelDetailsObject from "../../objects/interface/PanelDetailsObject";
 
 const renderPanelHeader = (props: PanelDetailsObject) => {
   return (

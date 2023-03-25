@@ -1,7 +1,7 @@
 import React, { RefObject } from "react";
 import "./Contact.css";
 
-import SendMessageButton from "../../views/SendMessageButton";
+import SendMessageButton from "../../views/sendMessageButton/SendMessageButton";
 
 type ContactProps = { contactSectionRef: RefObject<HTMLDivElement> };
 

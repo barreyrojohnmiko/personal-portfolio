@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import "./Home.css";
 
-import Footer from "../../views/Footer";
-import Header from "../../views/Header";
-import Sidebar from "../../views/Sidebar";
+import Footer from "../../views/footer/Footer";
+import Header from "../../views/header/Header";
+import Sidebar from "../../views/sidebar/Sidebar";
 import About from "../about/About";
 import Contact from "../contact/Contact";
 import Introduction from "../introduction/Introduction";

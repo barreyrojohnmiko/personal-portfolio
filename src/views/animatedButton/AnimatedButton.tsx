@@ -1,5 +1,5 @@
 import "./AnimatedButton.css";
-import AnimatedButtonObject from "../objects/interface/AnimatedButtonObject";
+import AnimatedButtonObject from "../../objects/interface/AnimatedButtonObject";
 
 const AnimatedButton = (props: AnimatedButtonObject) => {
   return (
