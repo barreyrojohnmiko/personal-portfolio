@@ -14,15 +14,14 @@
 }
 
 .content-section-padding {
-  padding-left: 12.5%;
-  padding-right: 12.5%;
-  margin-bottom: 30%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 16%;
+  margin-left: -120px;
 }
 
-@media screen and (min-width: 1024px) {
-  .footer-section {
-    display: none;
-  }
+.contact-section {
+  margin-left: -120px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 1023px) {
@@ -44,13 +43,13 @@
   }
 
   .contact-section {
-    margin-bottom: 30%;
+    margin-top: 78%;
+    margin-bottom: 67%;
+    margin-left: 0;
   }
-}
 
-@media screen and (min-height: 1023px) {
-  .introduction-section {
-    margin-top: 55%;
-    margin-bottom: 80%;
+  .content-section-padding {
+    margin-top: 25%;
+    margin-left: 0;
   }
 }

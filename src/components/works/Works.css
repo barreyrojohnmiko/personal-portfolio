@@ -10,6 +10,22 @@
   gap: 30px;
 }
 
+.works-label {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: #c094d3;
+}
+
+.opening {
+  margin-bottom: 30px;
+}
+
+.closing {
+  margin-top: 30px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 1023px) {
   .works-panel-container {
     flex-direction: column;

@@ -24,8 +24,8 @@ const Home = () => {
     if (aboutSectionRef.current) {
       window.scrollTo({
         top: isMobileView
-          ? aboutSectionRef.current.offsetTop + 30
-          : aboutSectionRef.current.offsetTop - 130,
+          ? aboutSectionRef.current.offsetTop - 40
+          : aboutSectionRef.current.offsetTop - 200,
         behavior: "smooth",
       });
     }
@@ -35,8 +35,8 @@ const Home = () => {
     if (worksSectionRef.current) {
       window.scrollTo({
         top: isMobileView
-          ? worksSectionRef.current.offsetTop + 30
-          : worksSectionRef.current.offsetTop - 130,
+          ? worksSectionRef.current.offsetTop - 40
+          : worksSectionRef.current.offsetTop - 200,
         behavior: "smooth",
       });
     }
@@ -45,7 +45,7 @@ const Home = () => {
   const handleContactClick = () => {
     if (contactSectionRef.current) {
       window.scrollTo({
-        top: contactSectionRef.current.offsetTop - 50,
+        top: contactSectionRef.current.offsetTop - 40,
         behavior: "smooth",
       });
     }
