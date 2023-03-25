@@ -58,11 +58,7 @@ const Header = (props: HeaderObject) => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      dispatch(
-        setIsHeaderVisible(
-          prevScrollPos > currentScrollPos || currentScrollPos < 5
-        )
-      );
+      dispatch(setIsHeaderVisible(prevScrollPos > currentScrollPos || currentScrollPos <= 5));
       dispatch(setPrevScrollPos(currentScrollPos));
     };
 
@@ -83,6 +79,10 @@ const Header = (props: HeaderObject) => {
         isHeaderVisible ? "140px" : "45px"
       }`;
     }
+  }, [isHeaderVisible]);
+
+  useEffect(() => {
+    console.log(isHeaderVisible)
   }, [isHeaderVisible]);
 
   const renderNavbar = () => {
