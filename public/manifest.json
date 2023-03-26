@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Miko Barreyro's Portfolio",
+  "name": "Created using React framework",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/333323418_723707869240371_5378287988469331409_n.jpg?stp=dst-jpg_p1080x2048&_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGrM4zpMLREqY896Xtj6MpRLXtxpL02TN4te3GkvTZM3gON2VL-JRaM5v2mi-XE271YU9KbdnLyOfpLBoGp0yeR&_nc_ohc=PUJuQHbaFOwAX_Cnym2&_nc_ht=scontent.fmnl17-1.fna&oh=03_AdRlFwXdnKxOuvN8R7SgSsklSoTn6V97sydfn4KTtdvVAw&oe=642BA1B0",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
