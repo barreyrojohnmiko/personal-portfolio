@@ -81,10 +81,6 @@ const Header = (props: HeaderObject) => {
     }
   }, [isHeaderVisible]);
 
-  useEffect(() => {
-    console.log(isHeaderVisible)
-  }, [isHeaderVisible]);
-
   const renderNavbar = () => {
     return (
       <div className={`navbar-section ${isNavbarOpen ? "open" : ""}`}>
