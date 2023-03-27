@@ -70,17 +70,6 @@ const Header = (props: HeaderObject) => {
     };
   }, [prevScrollPos, isHeaderVisible]);
 
-  useEffect(() => {
-    const introductionSection = document.querySelector(
-      ".introduction-section"
-    ) as HTMLElement;
-    if (introductionSection) {
-      introductionSection.style.paddingTop = `${
-        isHeaderVisible ? "140px" : "45px"
-      }`;
-    }
-  }, [isHeaderVisible]);
-
   const renderNavbar = () => {
     return (
       <div className={`navbar-section ${isNavbarOpen ? "open" : ""}`}>

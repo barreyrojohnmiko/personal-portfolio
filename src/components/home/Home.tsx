@@ -25,7 +25,7 @@ const Home = () => {
       window.scrollTo({
         top: isMobileView
           ? aboutSectionRef.current.offsetTop - 25 // Mobile View
-          : aboutSectionRef.current.offsetTop - 150,
+          : aboutSectionRef.current.offsetTop - 50,
         behavior: "smooth",
       });
     }
@@ -36,7 +36,7 @@ const Home = () => {
       window.scrollTo({
         top: isMobileView
           ? worksSectionRef.current.offsetTop - 25
-          : worksSectionRef.current.offsetTop - 150,
+          : worksSectionRef.current.offsetTop - 50,
         behavior: "smooth",
       });
     }
@@ -45,7 +45,7 @@ const Home = () => {
   const handleContactClick = () => {
     if (contactSectionRef.current) {
       window.scrollTo({
-        top: contactSectionRef.current.offsetTop - 40,
+        top: contactSectionRef.current.offsetTop,
         behavior: "smooth",
       });
     }

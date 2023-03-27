@@ -15,6 +15,15 @@ const Works: React.FC<WorksProps> = ({ worksSectionRef }) => {
         <div className="works-label opening">&lt;projects&gt;</div>
         <div className="works-panel-container">
           <WorkPanel {...panelData1} />
+          <WorkPanel {...panelData1} />
+          <WorkPanel {...panelData1} />
+          <WorkPanel {...panelData1} />
+          <WorkPanel {...panelData1} />
+          <WorkPanel {...panelData1} />
+          <WorkPanel {...panelData1} />
+          <WorkPanel {...panelData1} />
+          <WorkPanel {...panelData1} />
+          <WorkPanel {...panelData1} />
         </div>
         <div className="works-label closing">&lt;/projects&gt;</div>
       </div>
