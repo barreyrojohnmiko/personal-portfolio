@@ -9,18 +9,17 @@
   margin-left: -120px;
 }
 
-.about-section {
+.content-section-padding {
   padding: 0 15%;
   margin-left: -120px;
-}
-
-.works-section {
-  padding: 0 15%;
-  margin: 0 0 16% -120px;
 }
 
 .contact-section {
   margin-left: -120px;
+}
+
+.footer-section {
+  margin-top: -70px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 1023px) {
@@ -37,15 +36,8 @@
     margin: 0;
   }
 
-  .about-section {
+  .content-section-padding {
     padding: 0 7%;
-    margin-top: 25%;
-    margin-left: 0;
-  }
-
-  .works-section {
-    padding: 0 7%;
-    margin-top: 25%;
     margin-left: 0;
   }
 
@@ -54,6 +46,10 @@
   }
 
   .contact-section {
-    margin: 78% 0 67% 0;
+    margin: 0;
+  }
+
+  .footer-section {
+    margin-top: -85px;
   }
 }

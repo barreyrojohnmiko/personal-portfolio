@@ -2,14 +2,17 @@ import React, { RefObject } from "react";
 import "./Contact.css";
 
 import SendMessageButton from "../../views/sendMessageButton/SendMessageButton";
+import Footer from "../../views/footer/Footer";
 
 type ContactProps = { contactSectionRef: RefObject<HTMLDivElement> };
 
 const handleSendMessageButtonClick = () => {
-  window.open('https://mail.google.com/mail/?view=cm&fs=1&to=barreyrojohnmiko@gmail.com',
-    '_blank', 'noopener,noreferrer'
+  window.open(
+    "https://mail.google.com/mail/?view=cm&fs=1&to=barreyrojohnmiko@gmail.com",
+    "_blank",
+    "noopener,noreferrer"
   );
-}
+};
 
 const Contact: React.FC<ContactProps> = ({ contactSectionRef }) => {
   return (
@@ -18,7 +21,9 @@ const Contact: React.FC<ContactProps> = ({ contactSectionRef }) => {
       <div className="contact-description">
         Interested in working together? Don't hesitate to leave me a message.
       </div>
-      <SendMessageButton handleSendMessageButtonClick={handleSendMessageButtonClick}/>
+      <div>
+        <SendMessageButton handleSendMessageButtonClick={handleSendMessageButtonClick} />
+      </div>
     </div>
   );
 };

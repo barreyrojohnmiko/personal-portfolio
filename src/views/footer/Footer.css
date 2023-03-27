@@ -1,10 +1,9 @@
 .footer-main-container {
-  width: 100vw;
+  height: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
 }
 
 .footer-sub-container {
@@ -34,7 +33,6 @@
 @media screen and (min-width: 1024px) {
   .footer-main-container {
     width: calc(100% - 120px);
-    margin-bottom: 20px;
   }
 
   .footer-sub-container {
@@ -45,5 +43,9 @@
 @media screen and (min-width: 0px) and (max-width: 1023px) {
   .footer-text {
     font-size: 14px;
+  }
+
+  .footer-main-container {
+    margin-bottom: 15px;
   }
 }
