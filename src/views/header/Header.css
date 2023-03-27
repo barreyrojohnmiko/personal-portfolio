@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 9998;
-  transition: top 0.3s ease-in-out;
+  transition: top 0.2s ease-in-out;
   background: #0a1930;
 }
 
@@ -17,8 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px 0 50px;
-  background-color: #0a1930;
+  padding: 0 50px;
 }
 
 .header-logo {
