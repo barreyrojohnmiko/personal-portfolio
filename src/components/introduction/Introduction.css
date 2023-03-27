@@ -1,7 +1,11 @@
 .introduction-main-container {
+  height: 100vh;
+  width: 100%;
+  margin-top: -100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
 }
 
 .greetings {
@@ -10,7 +14,6 @@
   font-weight: 400;
   font-size: 30px;
   color: #c094d3;
-  margin-bottom: 10px;
 }
 
 .full-name {
@@ -19,7 +22,6 @@
   font-weight: bold;
   font-size: 90px;
   color: #ccd6f6;
-  margin-bottom: 10px;
 }
 
 .job-description {
@@ -41,7 +43,7 @@
   }
 
   .job-description {
-    padding-right: 0%;
     font-size: 16px;
+    padding-right: 0;
   }
 }

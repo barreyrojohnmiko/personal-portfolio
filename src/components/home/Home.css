@@ -1,21 +1,12 @@
 .home-container {
-  height: 100%;
   display: flex;
   flex-direction: row;
   background: #0a1930;
 }
 
-.content-main-section {
-  width: calc(100% - 120px);
-}
-
-.header-section {
-  margin-bottom: 10.5%;
-}
-
 .introduction-section {
   padding: 0 15%;
-  margin: 0 0 20% -120px;
+  margin-left: -120px;
 }
 
 .about-section {
@@ -43,7 +34,7 @@
 
   .introduction-section {
     padding: 0 7%;
-    margin: 27% 0 80% 0;
+    margin: 0;
   }
 
   .about-section {
