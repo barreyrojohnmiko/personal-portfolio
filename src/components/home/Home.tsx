@@ -52,7 +52,7 @@ const Home = () => {
   };
 
   const handleResumeClick = () => {
-    window.open('https://drive.google.com/file/d/1ij-OKSoNlihLnJBRB1cFXT8Wb3ukocwL/view?usp=share_link', '_blank');
+    window.open('https://drive.google.com/file/d/1K111zfrvZ84mIOUJl_3_71XAJz9kbz0f/view?usp=share_link', '_blank');
   }
 
   const toggleNavbar = () => {
