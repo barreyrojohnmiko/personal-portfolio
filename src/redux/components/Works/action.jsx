@@ -1,8 +1,8 @@
-export const SET_PANEL_DATA_1 = "SET_PANEL_DATA_1";
+export const SET_PANEL_DATA = "SET_PANEL_DATA";
 
-export const setPanelData1 = (panelData1) => (dispatch) => {
+export const setPanelData = (panelData) => (dispatch) => {
   dispatch({
-    type: SET_PANEL_DATA_1,
-    payload: panelData1,
+    type: SET_PANEL_DATA,
+    payload: panelData,
   });
 };
