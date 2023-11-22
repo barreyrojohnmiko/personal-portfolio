@@ -4,20 +4,75 @@
   background: #0a1930;
 }
 
+
+/* Introduction Section */
 .introduction-section {
   padding: 0 15%;
   margin-left: -120px;
 }
 
+.introduction-main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.greetings {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: #c094d3;
+}
+
+.full-name {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccd6f6;
+}
+
+.job-description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #8892b0;
+  font-size: 18px;
+  padding-right: 50%;
+  line-height: 26px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+  .greetings {
+    font-size: 20px;
+  }
+
+  .full-name {
+    font-size: 50px;
+  }
+
+  .job-description {
+    font-size: 16px;
+    padding-right: 0;
+  }
+}
+
+/* Content Section */
 .content-section-padding {
   padding: 0 15%;
   margin-left: -120px;
 }
 
+/* Contact Section */
 .contact-section {
   margin-left: -120px;
 }
 
+/* Footer Section */
 .footer-section {
   margin-top: -70px;
 }
