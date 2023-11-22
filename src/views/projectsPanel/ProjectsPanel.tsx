@@ -1,4 +1,4 @@
-import "./style.css";
+import "./ProjectsPanel.css";
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {

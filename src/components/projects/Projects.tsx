@@ -1,5 +1,5 @@
 import React, { RefObject } from "react";
-import "./style.css";
+import "./Projects.css";
 
 import { useSelector } from "react-redux";
 import ProjectsPanelView from "../../views/projectsPanel/ProjectsPanel";
