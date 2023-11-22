@@ -1,0 +1,129 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9998;
+  transition: top 0.2s ease-in-out;
+  background: #0a1930;
+}
+
+.header--hidden {
+  top: -100%;
+}
+
+.header-main-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.header-logo {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  color: #ccd6f6;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80.63380281690141%;
+  gap: 4%;
+}
+
+.header-btn-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ccd6f6;
+}
+
+.header-btn-text:hover {
+  color: #c094d3;
+}
+
+.header-btn-border {
+  background: transparent;
+  border: none;
+}
+
+.hamburger-main-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.hamburger-logo {
+  height: 25px;
+  width: 25px;
+  color: #ccd6f6;
+}
+
+.hamburger-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8892b0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+  .header-main-container {
+    margin-left: auto;
+    padding-right: 0;
+  }
+
+  .navbar-section {
+    position: fixed;
+    top: 0;
+    right: -75%;
+    bottom: 0;
+    width: 75%;
+    background-color: #112240;
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+  }
+
+  .navbar-section.open {
+    right: 0;
+  }
+
+  .navbar-menu-container {
+    height: calc(100% - 190px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-btn-text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ccd6f6;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .navbar-btn-border {
+    background: transparent;
+    border: none;
+  }
+
+  .navbar-header-container {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 25px;
+  }
+}

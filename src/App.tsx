@@ -1,10 +1,7 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-
-import Dump from "./components/Dump";
-import Home from "./components/Home";
-
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+
+import Home from "./components/home/Home";
 
 const App = () => {
   return (
@@ -12,7 +9,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/dump" element={<Dump />} />
       </Routes>
     </div>
   );

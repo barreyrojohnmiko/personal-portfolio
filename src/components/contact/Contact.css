@@ -1,0 +1,38 @@
+.contact-main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.contact-header {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  color: #ccd6f6;
+}
+
+.contact-description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #8892b0;
+  padding: 0 20%;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+  .contact-header {
+    font-size: 40px;
+  }
+
+  .contact-description {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,26 @@
+.sidebar-main-container {
+  height: 100vh;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-sub-container {
+  position: fixed;
+}
+
+.sidebar-logo {
+  height: 24px;
+  width: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #b0b2c3;
+}
+
+.sidebar-logo:hover {
+  color: #c094d3;
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
