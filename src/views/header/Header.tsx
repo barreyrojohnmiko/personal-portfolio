@@ -25,7 +25,7 @@ const Header = (props: HeaderObject) => {
               About
             </button>
             <button className="header-btn-text header-btn-border" onClick={props.handleWorksClick}>
-              Works
+              Projects
             </button>
             <button className="header-btn-text header-btn-border" onClick={props.handleContactClick}>
               Contact
