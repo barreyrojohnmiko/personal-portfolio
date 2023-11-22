@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/RJSPersonalPortfolio/static/css/main.9c3b7326.css",
-    "main.js": "/RJSPersonalPortfolio/static/js/main.ace06cd5.js",
+    "main.css": "/RJSPersonalPortfolio/static/css/main.93a679ca.css",
+    "main.js": "/RJSPersonalPortfolio/static/js/main.e35f8eaa.js",
     "static/media/Miko.jpg": "/RJSPersonalPortfolio/static/media/Miko.61c8099daa61b2391dda.jpg",
     "index.html": "/RJSPersonalPortfolio/index.html",
-    "main.9c3b7326.css.map": "/RJSPersonalPortfolio/static/css/main.9c3b7326.css.map",
-    "main.ace06cd5.js.map": "/RJSPersonalPortfolio/static/js/main.ace06cd5.js.map"
+    "main.93a679ca.css.map": "/RJSPersonalPortfolio/static/css/main.93a679ca.css.map",
+    "main.e35f8eaa.js.map": "/RJSPersonalPortfolio/static/js/main.e35f8eaa.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c3b7326.css",
-    "static/js/main.ace06cd5.js"
+    "static/css/main.93a679ca.css",
+    "static/js/main.e35f8eaa.js"
   ]
 }
