@@ -14,7 +14,7 @@ const initialState = {
     {
       projectLabel: "Breach Analyzer",
       projectDescription:
-        "This service emerged after Adobe's largest ever customer accounts breach. This software aims to check if your credentials have been exposed, reducing the risk of widespread account compromise.",
+        "This service emerged after Adobe's largest ever customer accounts breach. This aims to check if your credentials have been exposed, reducing the risk of widespread account compromise.",
       githubLink: "",
       externalLink: "https://breach.itfabrik24.net/",
       techUsed1: "ReactJS",
