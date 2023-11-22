@@ -5,7 +5,6 @@
 }
 
 
-/* Introduction Section */
 .introduction-section {
   padding: 0 15%;
   margin-left: -120px;
@@ -61,18 +60,15 @@
   }
 }
 
-/* Content Section */
 .content-section-padding {
   padding: 0 15%;
   margin-left: -120px;
 }
 
-/* Contact Section */
 .contact-section {
   margin-left: -120px;
 }
 
-/* Footer Section */
 .footer-section {
   margin-top: -70px;
 }

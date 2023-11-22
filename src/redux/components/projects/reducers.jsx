@@ -23,7 +23,7 @@ const initialState = {
   ],
 };
 
-const worksReducers = (state = initialState, action) => {
+const projectsReducers = (state = initialState, action) => {
   switch (action.type) {
     case SET_PANEL_DATA:
       return { ...state, panelData1: action.payload };
@@ -32,4 +32,4 @@ const worksReducers = (state = initialState, action) => {
   }
 };
 
-export default worksReducers;
+export default projectsReducers;

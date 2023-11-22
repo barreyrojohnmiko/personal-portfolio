@@ -2,12 +2,12 @@ import { applyMiddleware, combineReducers, createStore } from "redux";
 import thunk from "redux-thunk";
 
 import homeReducers from "./components/home/reducers";
-import worksReducers from "./components/works/reducers";
+import projectsReducers from "./components/projects/reducers";
 import headerReducers from "./views/header/reducers";
 
 const rootReducer = combineReducers({
   homeReducers,
-  worksReducers,
+  projectsReducers,
   headerReducers,
 });
 

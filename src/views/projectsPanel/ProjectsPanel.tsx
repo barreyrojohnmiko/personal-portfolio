@@ -1,4 +1,4 @@
-import "./WorkPanel.css";
+import "./style.css";
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -9,14 +9,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import PanelDetailsObject from "../../objects/interface/PanelDetailsObject";
 
-const WorkPanel = (props: PanelDetailsObject) => {
+const ProjectsPanelView = (props: PanelDetailsObject) => {
   return (
-    <div className="work-panel-main-container">
-      <div className="work-panel-header">
+    <div className="projects-panel-main-container">
+      <div className="projects-panel-header">
         <div className="left-panel-content">
           <FontAwesomeIcon
             icon={faLaptopCode}
-            className="work-panel-left-logo"
+            className="projects-panel-left-logo"
           />
         </div>
 
@@ -29,7 +29,7 @@ const WorkPanel = (props: PanelDetailsObject) => {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="work-panel-right-logo"
+                className="projects-panel-right-logo"
               />
             </div>
           ) : null}
@@ -41,18 +41,18 @@ const WorkPanel = (props: PanelDetailsObject) => {
           >
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
-              className="work-panel-right-logo"
+              className="projects-panel-right-logo"
             />
           </div>
         </div>
       </div>
 
-      <div className="work-panel-body-container">
+      <div className="projects-panel-body-container">
         <div className="panel-title">{props.projectLabel}</div>
         <div className="panel-description">{props.projectDescription}</div>
       </div>
 
-      <div className="work-panel-footer">
+      <div className="projects-panel-footer">
         <div className="footer-label">{props.techUsed1}</div>
         <div className="footer-label">{props.techUsed2}</div>
       </div>
@@ -60,4 +60,4 @@ const WorkPanel = (props: PanelDetailsObject) => {
   );
 };
 
-export default WorkPanel;
+export default ProjectsPanelView;

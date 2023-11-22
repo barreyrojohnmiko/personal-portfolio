@@ -2,11 +2,11 @@ import React, { RefObject } from "react";
 import "./About.css";
 import devImage from "../../assets/images/Miko.jpg";
 
-type AboutProps = { aboutSectionRef: RefObject<HTMLDivElement> };
+type AboutProps = { aboutMeSectionRef: RefObject<HTMLDivElement> };
 
-const About: React.FC<AboutProps> = ({ aboutSectionRef }) => {
+const About: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
   return (
-    <div className="about-main-container" ref={aboutSectionRef}>
+    <div className="about-main-container" ref={aboutMeSectionRef}>
       <div className="developer-profile">
         <div className="about-label">&lt;about-me&gt;</div>
         <div className="about-me-content">

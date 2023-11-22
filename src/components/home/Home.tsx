@@ -6,7 +6,7 @@ import Header from "../../views/header/Header";
 import Sidebar from "../../views/sidebar/Sidebar";
 import About from "../about/About";
 import Contact from "../contact/Contact";
-import Works from "../works/Works";
+import ProjectsComponent from "../projects/Projects";
 
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -20,27 +20,27 @@ const Home = () => {
     (state: any) => state.homeReducers
   );
 
-  const aboutSectionRef = useRef<HTMLDivElement>(null);
+  const aboutMeSectionRef = useRef<HTMLDivElement>(null);
   const contactSectionRef = useRef<HTMLDivElement>(null);
-  const worksSectionRef = useRef<HTMLDivElement>(null);
+  const projectsSectionRef = useRef<HTMLDivElement>(null);
 
   const handleAboutClick = () => {
-    if (aboutSectionRef.current) {
+    if (aboutMeSectionRef.current) {
       window.scrollTo({
         top: isMobileView
-          ? aboutSectionRef.current.offsetTop - 25 // Mobile View
-          : aboutSectionRef.current.offsetTop - 50,
+          ? aboutMeSectionRef.current.offsetTop - 25 // Mobile View
+          : aboutMeSectionRef.current.offsetTop - 50,
         behavior: "smooth",
       });
     }
   };
 
   const handleWorksClick = () => {
-    if (worksSectionRef.current) {
+    if (projectsSectionRef.current) {
       window.scrollTo({
         top: isMobileView
-          ? worksSectionRef.current.offsetTop - 25
-          : worksSectionRef.current.offsetTop - 50,
+          ? projectsSectionRef.current.offsetTop - 25
+          : projectsSectionRef.current.offsetTop - 50,
         behavior: "smooth",
       });
     }
@@ -111,12 +111,14 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="about-section content-section-padding">
-            <About aboutSectionRef={aboutSectionRef} />
+          <div className="about-me-section content-section-padding">
+            <About aboutMeSectionRef={aboutMeSectionRef} />
           </div>
-          <div className="works-section content-section-padding">
-            <Works worksSectionRef={worksSectionRef} />
+
+          <div className="projects-section content-section-padding">
+            <ProjectsComponent projectsSectionRef={projectsSectionRef} />
           </div>
+
           <div className="contact-section">
             <Contact contactSectionRef={contactSectionRef} />
           </div>

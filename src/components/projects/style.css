@@ -1,18 +1,18 @@
-.works-main-container {
+.projects-main-container {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.works-panel-container {
+.projects-panel-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.works-label {
+.projects-label {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -29,11 +29,11 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 1023px) {
-  .works-panel-container {
+  .projects-panel-container {
     flex-direction: column;
   }
 
-  .works-label {
+  .projects-label {
     font-size: 20px;
   }
 }

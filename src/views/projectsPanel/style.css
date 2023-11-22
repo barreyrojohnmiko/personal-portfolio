@@ -1,4 +1,4 @@
-.work-panel-main-container {
+.projects-panel-main-container {
   display: flex;
   flex-direction: column;
   height: 360px;
@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.work-panel-header {
+.projects-panel-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22,7 +22,7 @@
   gap: 20px;
 }
 
-.work-panel-left-logo {
+.projects-panel-left-logo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -30,7 +30,7 @@
   color: #c094d3;
 }
 
-.work-panel-right-logo {
+.projects-panel-right-logo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -38,11 +38,11 @@
   color: #ccd6f6;
 }
 
-.work-panel-right-logo:hover {
+.projects-panel-right-logo:hover {
   color: #c094d3;
 }
 
-.work-panel-body-container {
+.projects-panel-body-container {
   display: flex;
   flex-direction: column;
   padding-left: 25px;
@@ -67,7 +67,7 @@
   line-height: 26px;
 }
 
-.work-panel-footer {
+.projects-panel-footer {
   display: flex;
   flex-direction: row;
   padding-left: 25px;
@@ -86,14 +86,14 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 1023px) {
-  .work-panel-main-container {
+  .projects-panel-main-container {
     height: 400px;
     width: 100%;
   }
 }
 
 @media screen and (min-height: 1023px) {
-  .work-panel-main-container {
+  .projects-panel-main-container {
     width: 45%;
   }
 }
