@@ -1,5 +1,6 @@
+import "./styles.scss";
+
 import React, { RefObject } from "react";
-import "./Projects.css";
 
 import ProjectPanelView from "../../views/projectPanel/ProjectPanel";
 
@@ -22,11 +23,20 @@ const panelData = [
     externalLink: "https://breach.itfabrik24.net/",
     techUsed: ["ReactJS", "Redux"],
   },
+  {
+    projectLabel: "Rückruftool",
+    projectDescription:
+      "Streamline call management at front desk. Easily notify the intended recipient to promptly return calls whenever someone contacts the company.",
+    githubLink: "",
+    externalLink:
+      "https://rueckrufe.codemeta.info/login?fbclid=IwAR0wG6T2rGI9BeNakJWugxRX_opsrCBT53739VVi99K6o-RiV5vFj2DzGVg",
+    techUsed: ["ReactJS", "Redux"],
+  },
 ];
 
 const ProjectsComponent: React.FC<ProjectsProps> = ({ projectsSectionRef }) => {
   return (
-    <div className="projects-main-container" ref={projectsSectionRef}>
+    <div className="projects-container" ref={projectsSectionRef}>
       <div className="projects-label opening">&lt;projects&gt;</div>
 
       <div className="projects-panel-container">

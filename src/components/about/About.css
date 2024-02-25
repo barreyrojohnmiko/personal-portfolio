@@ -11,12 +11,12 @@
 }
 
 .about-label {
-  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   color: #c094d3;
-  margin-bottom: 10px;
 }
 
 .about-me-content {
@@ -26,21 +26,22 @@
 }
 
 .about-me-sub-container {
+  margin-right: 70px;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-right: 70px;
 }
 
 .about-me-text {
-  font-family: "Poppins", sans-serif;
+  margin-left: 15px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #8892b0;
   width: 100%;
   overflow: hidden;
-  margin-left: 15px;
   line-height: 30px;
 }
 
@@ -55,7 +56,7 @@
 
 ul {
   list-style: none;
-  font-family: "Poppins", sans-serif;
+
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -65,6 +66,7 @@ ul {
 
 .bullet-point {
   position: relative;
+
   padding-left: 20px;
 }
 
@@ -87,8 +89,9 @@ ul {
 
 @media screen and (min-width: 0px) and (max-width: 1023px) {
   .about-main-container {
-    height: 100%;
     margin-bottom: 17%;
+
+    height: 100%;
   }
 
   .about-label {
@@ -104,6 +107,7 @@ ul {
 
   .about-me-text {
     font-size: 16px;
+    
     padding-left: 3%;
   }
 
@@ -117,6 +121,7 @@ ul {
 
   .developer-photo {
     margin-bottom: 10px;
+    
     height: 200px;
     width: 200px;
   }

@@ -1,6 +1,5 @@
 .projects-panel-wrapper {
   height: 360px;
-  width: 30%;
   display: flex;
   flex-direction: column;
   background: #112240;
@@ -33,9 +32,10 @@
   .projects-panel-body-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+
     padding-left: 25px;
     padding-right: 25px;
-    gap: 5px;
 
     .panel-title {
       font-style: normal;
@@ -54,13 +54,15 @@
   }
 
   .projects-panel-footer {
+    margin: 0 0 20px;
+
     display: flex;
     flex-direction: row;
-    padding-left: 25px;
     gap: 25px;
     position: absolute;
     bottom: 0;
-    margin: 0 0 20px;
+    
+    padding-left: 25px;
 
     .tech-label {
       font-style: normal;
@@ -72,9 +74,10 @@
 }
 
 .panel-logo-wrapper {
+  margin: 0;
+
   background-color: transparent;
   border: none;
-  margin: 0;
 
   .panel-logo {
     font-size: 20px;
@@ -90,11 +93,5 @@
   .projects-panel-wrapper {
     height: 400px;
     width: 100%;
-  }
-}
-
-@media screen and (min-height: 1023px) {
-  .projects-panel-wrapper {
-    width: 45%;
   }
 }
