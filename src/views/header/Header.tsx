@@ -3,7 +3,8 @@ import "./Header.css";
 
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AnimatedButton from "../animatedButton/AnimatedButton";
+
+import AnimatedButtonView from "../animatedButton/AnimatedButton";
 
 import { useDispatch, useSelector } from "react-redux";
 import { setIsHeaderVisible, setPrevScrollPos } from "../../redux/views/header/action";
@@ -30,7 +31,7 @@ const Header = (props: HeaderObject) => {
             <button className="header-btn-text header-btn-border" onClick={props.handleContactClick}>
               Contact
             </button>
-            <AnimatedButton animatedButtonClick={props.handleResumeClick} />
+            <AnimatedButtonView animatedButtonClick={props.handleResumeClick} />
           </div>
         </div>
       </header>

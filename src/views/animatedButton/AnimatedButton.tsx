@@ -1,17 +1,13 @@
-import "./AnimatedButton.css";
+import "./styles.scss";
+
 import AnimatedButtonObject from "../../objects/interface/AnimatedButtonObject";
 
-const AnimatedButton = (props: AnimatedButtonObject) => {
+const AnimatedButtonView = (props: AnimatedButtonObject) => {
   return (
-    <div onClick={props.animatedButtonClick}>
-      <button className="animated-button">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span> Resume
-      </button>
-    </div>
+    <button className="animated-button" onClick={props.animatedButtonClick}>
+      <span /> <span /> <span /> <span /> Resume
+    </button>
   );
 };
 
-export default AnimatedButton;
+export default AnimatedButtonView;
