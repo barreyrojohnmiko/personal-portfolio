@@ -1,24 +1,53 @@
-import "./Sidebar.css";
+import "./styles.scss";
 
-import { faFacebookF, faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebookF,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Sidebar = () => {
+  const renderSidebarPanel = (title: string, onClick: any, icon: any) => {
+    return (
+      <button
+        className="sidebar-panel"
+        data-toggle="tooltip"
+        title={title}
+        onClick={onClick}
+      >
+        <FontAwesomeIcon icon={icon} className="sidebar-logo" />
+      </button>
+    );
+  };
+
   return (
-    <div className="sidebar-main-container">
-      <div className="sidebar-sub-container">
-        <div data-toggle="tooltip" title="Github" onClick={() => window.open('https://github.com/barreyrojohnmiko')}>
-          <FontAwesomeIcon icon={faGithub} className="sidebar-logo" />
-        </div>
-        <div data-toggle="tooltip" title="Facebook" onClick={() => window.open('https://www.facebook.com/JMDBarreyro/')}>
-          <FontAwesomeIcon icon={faFacebookF} className="sidebar-logo" />
-        </div>
-        <div data-toggle="tooltip" title="Instagram" onClick={() => window.open('https://www.instagram.com/barreyro_miko/')}>
-          <FontAwesomeIcon icon={faInstagram} className="sidebar-logo" />
-        </div>
-        <div data-toggle="tooltip" title="Linkedin" onClick={() => window.open('https://www.linkedin.com/in/barreyrojohnmiko/')}>
-          <FontAwesomeIcon icon={faLinkedin} className="sidebar-logo" />
-        </div>
+    <div className="sidebar-main-wrapper">
+      <div className="sidebar-sub-wrapper">
+        {renderSidebarPanel(
+          "Github",
+          () => window.open("https://github.com/barreyrojohnmiko"),
+          faGithub
+        )}
+
+        {renderSidebarPanel(
+          "Facebook",
+          () => window.open("https://www.facebook.com/JMDBarreyro/"),
+          faFacebookF
+        )}
+
+        {renderSidebarPanel(
+          "Instagram",
+          () => window.open("https://www.instagram.com/barreyro_miko/"),
+          faInstagram
+        )}
+
+        {renderSidebarPanel(
+          "Linkedin",
+          () => window.open("https://www.linkedin.com/in/barreyrojohnmiko/"),
+          faLinkedin
+        )}
       </div>
     </div>
   );
