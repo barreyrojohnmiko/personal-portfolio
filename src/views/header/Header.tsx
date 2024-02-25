@@ -65,49 +65,19 @@ const Header = (props: HeaderObject) => {
 
   return (
     <>
-      {isMobileView ? (
-        <>
-          <header
-            className={`header ${
-              isHeaderVisible ? "header--visible" : "header--hidden"
-            }`}
-          >
-            <div className="hamburger-main-wrapper">
-              <div className="header-logo">MIKO</div>
+      <header
+        className={`header ${
+          isHeaderVisible ? "header--visible" : "header--hidden"
+        }`}
+      >
+        <div className="hamburger-main-wrapper">
+          <div className="header-logo">MIKO</div>
 
-              <button onClick={props.toggleNavbar}>
-                <FontAwesomeIcon icon={faBars} className="hamburger-logo" />
-              </button>
-            </div>
-          </header>
-
-          <div className={`navbar-section ${isNavbarOpen ? "open" : ""}`}>
-            <div className="navbar-header-wrapper">
-              <button onClick={props.toggleNavbar}>
-                <FontAwesomeIcon icon={faX} className="hamburger-logo" />
-              </button>
-            </div>
-
-            <div className="navbar-menu-wrapper">
-              {renderNavMenuPanel(props.handleAboutClick, "About")}
-
-              {renderNavMenuPanel(props.handleWorksClick, "Works")}
-
-              {renderNavMenuPanel(props.handleContactClick, "Contact")}
-
-              {renderNavMenuPanel(props.handleResumeClick, "Resume")}
-            </div>
-          </div>
-        </>
-      ) : (
-        <header
-          className={`header ${
-            isHeaderVisible ? "header--visible" : "header--hidden"
-          }`}
-        >
-          <div className="header-main-wrapper">
-            <div className="header-logo">MIKO</div>
-
+          {isMobileView ? (
+            <button onClick={props.toggleNavbar}>
+              <FontAwesomeIcon icon={faBars} className="hamburger-logo" />
+            </button>
+          ) : (
             <div className="header-menu">
               {renderHeaderMenuPanel(props.handleAboutClick, "About")}
 
@@ -119,8 +89,28 @@ const Header = (props: HeaderObject) => {
                 animatedButtonClick={props.handleResumeClick}
               />
             </div>
+          )}
+        </div>
+      </header>
+
+      {isMobileView && (
+        <div className={`navbar-section ${isNavbarOpen ? "open" : ""}`}>
+          <div className="navbar-header-wrapper">
+            <button onClick={props.toggleNavbar}>
+              <FontAwesomeIcon icon={faX} className="hamburger-logo" />
+            </button>
           </div>
-        </header>
+
+          <div className="navbar-menu-wrapper">
+            {renderNavMenuPanel(props.handleAboutClick, "About")}
+
+            {renderNavMenuPanel(props.handleWorksClick, "Works")}
+
+            {renderNavMenuPanel(props.handleContactClick, "Contact")}
+
+            {renderNavMenuPanel(props.handleResumeClick, "Resume")}
+          </div>
+        </div>
       )}
     </>
   );
