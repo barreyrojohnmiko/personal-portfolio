@@ -3,7 +3,7 @@ import "./Home.css";
 
 import Footer from "../../views/footer/Footer";
 import Header from "../../views/header/Header";
-import Sidebar from "../../views/sidebar/Sidebar";
+import SidebarView from "../../views/sidebar/Sidebar";
 import About from "../about/About";
 import Contact from "../contact/Contact";
 import ProjectsComponent from "../projects/Projects";
@@ -84,7 +84,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="sidebar-section">
-        <Sidebar />
+        <SidebarView />
       </div>
 
       <div className="content-main-section">

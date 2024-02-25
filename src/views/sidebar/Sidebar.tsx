@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Sidebar = () => {
+const SidebarView = () => {
   const renderSidebarPanel = (title: string, onClick: any, icon: any) => {
     return (
       <button
@@ -53,4 +53,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SidebarView;

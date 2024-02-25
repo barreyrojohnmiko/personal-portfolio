@@ -1,7 +1,7 @@
 import React, { RefObject } from "react";
 import "./Contact.css";
 
-import SendMessageButton from "../../views/sendMessageButton/SendMessageButton";
+import SendMessageButtonView from "../../views/sendMessageButton/SendMessageButton";
 
 type ContactProps = { contactSectionRef: RefObject<HTMLDivElement> };
 
@@ -21,7 +21,7 @@ const Contact: React.FC<ContactProps> = ({ contactSectionRef }) => {
         Interested in working together? Don't hesitate to leave me a message.
       </div>
       <div>
-        <SendMessageButton
+        <SendMessageButtonView
           handleSendMessageButtonClick={handleSendMessageButtonClick}
         />
       </div>
