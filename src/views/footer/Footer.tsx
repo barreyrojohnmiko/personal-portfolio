@@ -1,25 +1,47 @@
-import "./Footer.css";
+import "./styles.scss";
 
-import { faFacebookF, faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
-const Footer = () => {
+import SocialLinkPanelView from "../socialLinkPanel/SocialLinkPanel";
+
+const FooterView = () => {
   return (
-    <div className="footer-main-container">
-      <div className="footer-sub-container">
-        <div onClick={() => window.open("https://github.com/barreyrojohnmiko")}>
-          <FontAwesomeIcon icon={faGithub} className="footer-logo" />
-        </div>
-        <div onClick={() => window.open("https://www.facebook.com/JMDBarreyro/")}>
-          <FontAwesomeIcon icon={faFacebookF} className="footer-logo" />
-        </div>
-        <div onClick={() => window.open("https://www.instagram.com/barreyro_miko/")}>
-          <FontAwesomeIcon icon={faInstagram} className="footer-logo" />
-        </div>
-        <div onClick={() => window.open("https://www.linkedin.com/in/barreyrojohnmiko/")}>
-          <FontAwesomeIcon icon={faLinkedin} className="footer-logo" />
-        </div>
+    <div className="footer-main-wrapper">
+      <div className="footer-sub-wrapper">
+        <SocialLinkPanelView
+          title={"Github"}
+          onClick={() => window.open("https://github.com/barreyrojohnmiko")}
+          icon={faGithub}
+        />
+
+        <SocialLinkPanelView
+          title={"Facebook"}
+          onClick={() => window.open("https://www.facebook.com/JMDBarreyro/")}
+          icon={faFacebookF}
+        />
+
+        <SocialLinkPanelView
+          title={"Instagram"}
+          onClick={() =>
+            window.open("https://www.instagram.com/barreyro_miko/")
+          }
+          icon={faInstagram}
+        />
+
+        <SocialLinkPanelView
+          title={"Linkedin"}
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/barreyrojohnmiko/")
+          }
+          icon={faLinkedin}
+        />
       </div>
+      
       <div className="footer-text">
         Designed & Developed by John Miko Barreyro
       </div>
@@ -27,4 +49,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterView;

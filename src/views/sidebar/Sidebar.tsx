@@ -6,48 +6,40 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import SocialLinkPanelView from "../socialLinkPanel/SocialLinkPanel";
 
 const SidebarView = () => {
-  const renderSidebarPanel = (title: string, onClick: any, icon: any) => {
-    return (
-      <button
-        className="sidebar-panel"
-        data-toggle="tooltip"
-        title={title}
-        onClick={onClick}
-      >
-        <FontAwesomeIcon icon={icon} className="sidebar-logo" />
-      </button>
-    );
-  };
-
   return (
     <div className="sidebar-main-wrapper">
       <div className="sidebar-sub-wrapper">
-        {renderSidebarPanel(
-          "Github",
-          () => window.open("https://github.com/barreyrojohnmiko"),
-          faGithub
-        )}
+        <SocialLinkPanelView
+          title={"Github"}
+          onClick={() => window.open("https://github.com/barreyrojohnmiko")}
+          icon={faGithub}
+        />
 
-        {renderSidebarPanel(
-          "Facebook",
-          () => window.open("https://www.facebook.com/JMDBarreyro/"),
-          faFacebookF
-        )}
+        <SocialLinkPanelView
+          title={"Facebook"}
+          onClick={() => window.open("https://www.facebook.com/JMDBarreyro/")}
+          icon={faFacebookF}
+        />
 
-        {renderSidebarPanel(
-          "Instagram",
-          () => window.open("https://www.instagram.com/barreyro_miko/"),
-          faInstagram
-        )}
+        <SocialLinkPanelView
+          title={"Instagram"}
+          onClick={() =>
+            window.open("https://www.instagram.com/barreyro_miko/")
+          }
+          icon={faInstagram}
+        />
 
-        {renderSidebarPanel(
-          "Linkedin",
-          () => window.open("https://www.linkedin.com/in/barreyrojohnmiko/"),
-          faLinkedin
-        )}
+        <SocialLinkPanelView
+          title={"Linkedin"}
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/barreyrojohnmiko/")
+          }
+          icon={faLinkedin}
+        />
       </div>
     </div>
   );

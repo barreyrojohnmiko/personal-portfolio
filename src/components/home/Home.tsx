@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./Home.css";
 
-import Footer from "../../views/footer/Footer";
+import FooterView from "../../views/footer/Footer";
 import Header from "../../views/header/Header";
 import SidebarView from "../../views/sidebar/Sidebar";
 import About from "../about/About";
@@ -123,7 +123,7 @@ const Home = () => {
             <Contact contactSectionRef={contactSectionRef} />
           </div>
           <div className="footer-section">
-            <Footer />
+            <FooterView />
           </div>
         </div>
       </div>

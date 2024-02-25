@@ -6,29 +6,11 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
-}
 
-.sidebar-sub-wrapper {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-
-  .sidebar-panel {
-    background-color: transparent;
-    border: none;
-    margin: 0;
-
-    .sidebar-logo {
-      height: 24px;
-      width: 24px;
-      color: #b0b2c3;
-    }
-
-    .sidebar-logo:hover {
-      color: #c094d3;
-      transform: translateY(-5px);
-      transition: transform 0.2s ease-in-out;
-    }
+  .sidebar-sub-wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 }
