@@ -28,7 +28,7 @@ const techList2 = [
   "SCSS/CSS3",
 ];
 
-const About: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
+const AboutComponent: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
   return (
     <div className="about-main-container" ref={aboutMeSectionRef}>
       <div className="developer-profile">
@@ -89,4 +89,4 @@ const About: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
   );
 };
 
-export default About;
+export default AboutComponent;

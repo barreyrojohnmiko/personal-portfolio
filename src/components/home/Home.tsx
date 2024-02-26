@@ -2,12 +2,13 @@ import "./styles.scss";
 
 import { useEffect, useRef } from "react";
 
-import FooterView from "../../views/footer/Footer";
-import Header from "../../views/header/Header";
-import SidebarView from "../../views/sidebar/Sidebar";
-import About from "../about/About";
-import ContactView from "../contact/Contact";
+import HeaderView from "../../views/header/Header";
+import AboutComponent from "../about/About";
+import ContactComponent from "../contact/Contact";
 import ProjectsComponent from "../projects/Projects";
+
+import FooterView from "../../views/footer/Footer";
+import SidebarView from "../../views/sidebar/Sidebar";
 
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -15,7 +16,7 @@ import {
   setIsNavbarOpen,
 } from "../../redux/components/home/action";
 
-const Home = () => {
+const HomeComponent = () => {
   const dispatch: any = useDispatch();
   const { isNavbarOpen, isMobileView } = useSelector(
     (state: any) => state.homeReducers
@@ -74,7 +75,7 @@ const Home = () => {
       dispatch(setIsMobileView(screenWidth <= mobileView));
     };
 
-    handleResize(); 
+    handleResize();
 
     window.addEventListener("resize", handleResize);
 
@@ -91,7 +92,7 @@ const Home = () => {
 
       <div className="content-main-section">
         <div className="header-section">
-          <Header
+          <HeaderView
             handleAboutClick={handleAboutClick}
             handleProjectsClick={handleProjectsClick}
             handleContactClick={handleContactClick}
@@ -114,7 +115,7 @@ const Home = () => {
           </div>
 
           <div className="about-me-section content-section-padding">
-            <About aboutMeSectionRef={aboutMeSectionRef} />
+            <AboutComponent aboutMeSectionRef={aboutMeSectionRef} />
           </div>
 
           <div className="projects-section content-section-padding">
@@ -122,7 +123,7 @@ const Home = () => {
           </div>
 
           <div className="contact-section">
-            <ContactView contactSectionRef={contactSectionRef} />
+            <ContactComponent contactSectionRef={contactSectionRef} />
           </div>
 
           <div className="footer-section">
@@ -134,4 +135,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeComponent;

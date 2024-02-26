@@ -14,7 +14,7 @@ const handleSendMessageButtonClick = () => {
   );
 };
 
-const ContactView: React.FC<ContactProps> = ({ contactSectionRef }) => {
+const ContactComponent: React.FC<ContactProps> = ({ contactSectionRef }) => {
   return (
     <div className="contact-main-container" ref={contactSectionRef}>
       <div className="contact-header">Get In Touch</div>
@@ -32,4 +32,4 @@ const ContactView: React.FC<ContactProps> = ({ contactSectionRef }) => {
   );
 };
 
-export default ContactView;
+export default ContactComponent;

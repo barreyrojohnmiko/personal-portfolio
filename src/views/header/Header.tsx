@@ -15,7 +15,7 @@ import AnimatedButtonView from "../animatedButton/AnimatedButton";
 
 import HeaderObject from "../../objects/interface/HeaderObject";
 
-const Header = (props: HeaderObject) => {
+const HeaderView = (props: HeaderObject) => {
   const dispatch: any = useDispatch();
   const { isNavbarOpen, isMobileView } = useSelector(
     (state: any) => state.homeReducers
@@ -116,4 +116,4 @@ const Header = (props: HeaderObject) => {
   );
 };
 
-export default Header;
+export default HeaderView;
