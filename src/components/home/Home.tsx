@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./styles.scss";
 
 import { useEffect, useRef } from "react";
 
