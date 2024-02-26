@@ -1,6 +1,6 @@
 interface HeaderObject {
   handleAboutClick: () => void;
-  handleWorksClick: () => void;
+  handleProjectsClick: () => void;
   handleContactClick: () => void;
   handleResumeClick: () => void;
   toggleNavbar: () => void;

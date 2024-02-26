@@ -81,7 +81,7 @@ const Header = (props: HeaderObject) => {
             <div className="header-menu">
               {renderHeaderMenuPanel(props.handleAboutClick, "About")}
 
-              {renderHeaderMenuPanel(props.handleWorksClick, "Projects")}
+              {renderHeaderMenuPanel(props.handleProjectsClick, "Projects")}
 
               {renderHeaderMenuPanel(props.handleContactClick, "Contact")}
 
@@ -104,7 +104,7 @@ const Header = (props: HeaderObject) => {
           <div className="navbar-menu-wrapper">
             {renderNavMenuPanel(props.handleAboutClick, "About")}
 
-            {renderNavMenuPanel(props.handleWorksClick, "Works")}
+            {renderNavMenuPanel(props.handleProjectsClick, "Works")}
 
             {renderNavMenuPanel(props.handleContactClick, "Contact")}
 

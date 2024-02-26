@@ -29,14 +29,14 @@ const Home = () => {
     if (aboutMeSectionRef.current) {
       window.scrollTo({
         top: isMobileView
-          ? aboutMeSectionRef.current.offsetTop - 25 // Mobile View
+          ? aboutMeSectionRef.current.offsetTop - 25
           : aboutMeSectionRef.current.offsetTop - 50,
         behavior: "smooth",
       });
     }
   };
 
-  const handleWorksClick = () => {
+  const handleProjectsClick = () => {
     if (projectsSectionRef.current) {
       window.scrollTo({
         top: isMobileView
@@ -74,7 +74,8 @@ const Home = () => {
       dispatch(setIsMobileView(screenWidth <= mobileView));
     };
 
-    handleResize(); // Check initial width
+    handleResize(); 
+
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -92,7 +93,7 @@ const Home = () => {
         <div className="header-section">
           <Header
             handleAboutClick={handleAboutClick}
-            handleWorksClick={handleWorksClick}
+            handleProjectsClick={handleProjectsClick}
             handleContactClick={handleContactClick}
             handleResumeClick={handleResumeClick}
             toggleNavbar={toggleNavbar}
