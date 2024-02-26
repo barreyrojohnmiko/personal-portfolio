@@ -1,4 +1,4 @@
-import "./index.css";
+import "./index.scss";
 
 import ReactDOM from "react-dom";
 import { HashRouter } from "react-router-dom";
