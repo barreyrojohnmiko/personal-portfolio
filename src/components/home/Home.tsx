@@ -1,11 +1,12 @@
-import { useEffect, useRef } from "react";
 import "./Home.css";
+
+import { useEffect, useRef } from "react";
 
 import FooterView from "../../views/footer/Footer";
 import Header from "../../views/header/Header";
 import SidebarView from "../../views/sidebar/Sidebar";
 import About from "../about/About";
-import Contact from "../contact/Contact";
+import ContactView from "../contact/Contact";
 import ProjectsComponent from "../projects/Projects";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -97,7 +98,7 @@ const Home = () => {
             toggleNavbar={toggleNavbar}
           />
         </div>
-        
+
         <div className={`content-sub-section ${isNavbarOpen ? "open" : ""}`}>
           <div className="introduction-section">
             <div className="introduction-main-container">
@@ -120,8 +121,9 @@ const Home = () => {
           </div>
 
           <div className="contact-section">
-            <Contact contactSectionRef={contactSectionRef} />
+            <ContactView contactSectionRef={contactSectionRef} />
           </div>
+
           <div className="footer-section">
             <FooterView />
           </div>
