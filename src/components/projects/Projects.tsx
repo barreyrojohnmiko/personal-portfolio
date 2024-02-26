@@ -8,6 +8,7 @@ type ProjectsProps = { projectsSectionRef: RefObject<HTMLDivElement> };
 
 const panelData = [
   {
+    pID: 1,
     projectLabel: "Notes",
     projectDescription:
       "Effortlessly allows you to create, edit, and organize your notes. With backup feature that ensures that your notes are always secure, with the flexibility to export your local storage data at any time.",
@@ -16,6 +17,7 @@ const panelData = [
     techUsed: ["ReactJS", "Redux"],
   },
   {
+    pID: 2,
     projectLabel: "Breach Analyzer",
     projectDescription:
       "This service emerged after Adobe's largest ever customer accounts breach. This aims to check if your credentials have been exposed, reducing the risk of widespread account compromise.",
@@ -24,6 +26,7 @@ const panelData = [
     techUsed: ["ReactJS", "Redux"],
   },
   {
+    pID: 3,
     projectLabel: "Rückruftool",
     projectDescription:
       "Streamline call management at front desk. Easily notify the intended recipient to promptly return calls whenever someone contacts the company.",
@@ -41,7 +44,7 @@ const ProjectsComponent: React.FC<ProjectsProps> = ({ projectsSectionRef }) => {
 
       <div className="projects-panel-container">
         {panelData.map((data: any, index: any) => (
-          <React.Fragment key={index}>
+          <React.Fragment key={data.pID}>
             <ProjectPanelView
               projectLabel={data.projectLabel}
               projectDescription={data.projectDescription}

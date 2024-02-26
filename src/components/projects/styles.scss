@@ -27,13 +27,13 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 1023px) {
-  .projects-panel-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    flex-direction: column;
-  }
+  .projects-container {
+    .projects-panel-container {
+      grid-template-columns: 1fr;
+    }
 
-  .projects-label {
-    font-size: 20px;
+    .projects-label {
+      font-size: 20px;
+    }
   }
 }
