@@ -1,11 +1,11 @@
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import thunk from "redux-thunk";
 
-import homeReducers from "./components/home/reducers";
+import portfolioReducers from "./components/portfolio/reducers";
 import headerReducers from "./views/header/reducers";
 
 const rootReducer = combineReducers({
-  homeReducers,
+  portfolioReducers,
   headerReducers,
 });
 

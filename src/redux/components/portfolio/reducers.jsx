@@ -5,7 +5,7 @@ const initialState = {
   isMobileView: true,
 };
 
-const homeReducers = (state = initialState, action) => {
+const portfolioReducers = (state = initialState, action) => {
   switch (action.type) {
     case SET_IS_NAVBAR_OPEN:
       return { ...state, isNavbarOpen: action.payload };
@@ -16,4 +16,4 @@ const homeReducers = (state = initialState, action) => {
   }
 };
 
-export default homeReducers;
+export default portfolioReducers;

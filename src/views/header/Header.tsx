@@ -18,7 +18,7 @@ import HeaderObject from "../../objects/interface/HeaderObject";
 const HeaderView = (props: HeaderObject) => {
   const dispatch: any = useDispatch();
   const { isNavbarOpen, isMobileView } = useSelector(
-    (state: any) => state.homeReducers
+    (state: any) => state.portfolioReducers
   );
   const { isHeaderVisible, prevScrollPos } = useSelector(
     (state: any) => state.headerReducers

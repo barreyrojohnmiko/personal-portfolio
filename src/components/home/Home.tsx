@@ -14,12 +14,12 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   setIsMobileView,
   setIsNavbarOpen,
-} from "../../redux/components/home/action";
+} from "../../redux/components/portfolio/action";
 
 const HomeComponent = () => {
   const dispatch: any = useDispatch();
   const { isNavbarOpen, isMobileView } = useSelector(
-    (state: any) => state.homeReducers
+    (state: any) => state.portfolioReducers
   );
 
   const aboutMeSectionRef = useRef<HTMLDivElement>(null);
