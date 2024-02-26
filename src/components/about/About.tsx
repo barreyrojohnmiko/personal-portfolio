@@ -1,8 +1,32 @@
+import "./styles.scss";
+
 import React, { RefObject } from "react";
-import "./About.css";
+
 import devImage from "../../assets/images/Miko.jpg";
 
 type AboutProps = { aboutMeSectionRef: RefObject<HTMLDivElement> };
+
+const techList1 = [
+  "TypeScript",
+  "ReactJS",
+  "React Native",
+  ".NET Core 6.0 C#",
+  "Bootstrap",
+  "Git",
+  "GitHub",
+  "Figma",
+  "WordPress",
+];
+const techList2 = [
+  "JavaScript",
+  "Angular 15",
+  "Ionic-Angular",
+  "SQL",
+  "Postman",
+  "Azure",
+  "GitLab",
+  "SCSS/CSS3",
+];
 
 const About: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
   return (
@@ -21,41 +45,44 @@ const About: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
               programming as a career.
             </div>
 
-            <br></br>
+            <br />
 
             <div className="about-me-text">
               Today, as a full-time software developer with a specialization in
               mobile development, I have extensive experience working with
-              various frameworks such as React and Angular. I'm also proficient in web
-              development and have a broad range of skills that extend beyond
-              just mobile development.
+              various frameworks such as React and Angular. I'm also proficient
+              in web development and have a broad range of skills that extend
+              beyond just mobile development.
             </div>
 
-            <br></br>
+            <br />
 
             <div className="about-me-text">
               Here are a few technologies I’ve been working with recently:
             </div>
+
             <div className="tech-listing">
               <ul className="tech-listing-spacing">
-                <li className="bullet-point">TypeScript</li>
-                <li className="bullet-point">ReactJS</li>
-                <li className="bullet-point">React Native</li>
-                <li className="bullet-point">Git</li>
-                <li className="bullet-point">Postman</li>
+                {techList1.map((tech, index) => (
+                  <li className="bullet-point" key={index}>
+                    {tech}
+                  </li>
+                ))}
               </ul>
+
               <ul className="tech-listing-spacing">
-                <li className="bullet-point">JavaScript</li>
-                <li className="bullet-point">Angular 15</li>
-                <li className="bullet-point">Ionic-Angular</li>
-                <li className="bullet-point">Wordpress</li>
+                {techList2.map((tech, index) => (
+                  <li className="bullet-point" key={index}>
+                    {tech}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
-          <div>
-            <img className="developer-photo" src={devImage} alt="Dev's Profile Picture" />
-          </div>
+
+          <img className="developer-photo" src={devImage} alt="Dev's Profile" />
         </div>
+
         <div className="about-label">&lt;/about-me&gt;</div>
       </div>
     </div>
