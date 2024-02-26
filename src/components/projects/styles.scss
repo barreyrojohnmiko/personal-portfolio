@@ -1,0 +1,39 @@
+.projects-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .projects-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: #c094d3;
+  }
+
+  .opening {
+    margin-bottom: 30px;
+  }
+
+  .closing {
+    margin-top: 30px;
+  }
+
+  .projects-panel-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+  .projects-container {
+    .projects-panel-container {
+      grid-template-columns: 1fr;
+    }
+
+    .projects-label {
+      font-size: 20px;
+    }
+  }
+}

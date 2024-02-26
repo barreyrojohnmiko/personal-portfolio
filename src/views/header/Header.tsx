@@ -1,121 +1,119 @@
+import "./styles.scss";
+
 import { useEffect } from "react";
-import "./Header.css";
 
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AnimatedButton from "../animatedButton/AnimatedButton";
 
 import { useDispatch, useSelector } from "react-redux";
-import { setIsHeaderVisible, setPrevScrollPos } from "../../redux/views/header/action";
+import {
+  setIsHeaderVisible,
+  setPrevScrollPos,
+} from "../../redux/views/header/action";
+
+import AnimatedButtonView from "../animatedButton/AnimatedButton";
 
 import HeaderObject from "../../objects/interface/HeaderObject";
 
-const Header = (props: HeaderObject) => {
+const HeaderView = (props: HeaderObject) => {
   const dispatch: any = useDispatch();
-  const { isNavbarOpen, isMobileView } = useSelector((state: any) => state.homeReducers);
-  const { isHeaderVisible, prevScrollPos } = useSelector((state: any) => state.headerReducers);
-
-  const renderDesktopHeader = () => {
-    return (
-      <header className={`header ${ isHeaderVisible ? "header--visible" : "header--hidden" }`}>
-        <div className="header-main-container">
-          <div className="header-logo">MIKO</div>
-          <div className="header-menu">
-            <button className="header-btn-text header-btn-border" onClick={props.handleAboutClick}>
-              About
-            </button>
-            <button className="header-btn-text header-btn-border" onClick={props.handleWorksClick}>
-              Works
-            </button>
-            <button className="header-btn-text header-btn-border" onClick={props.handleContactClick}>
-              Contact
-            </button>
-            <AnimatedButton animatedButtonClick={props.handleResumeClick} />
-          </div>
-        </div>
-      </header>
-    );
-  };
-
-  const renderMobileHeader = () => {
-    return (
-      <header
-        className={`header ${
-          isHeaderVisible ? "header--visible" : "header--hidden"
-        }`}
-      >
-        <div className="hamburger-main-container">
-          <div className="header-logo">MIKO</div>
-          <div onClick={props.toggleNavbar}>
-            <FontAwesomeIcon icon={faBars} className="hamburger-logo" />
-          </div>
-        </div>
-      </header>
-    );
-  };
+  const { isNavbarOpen, isMobileView } = useSelector(
+    (state: any) => state.portfolioReducers
+  );
+  const { isHeaderVisible, prevScrollPos } = useSelector(
+    (state: any) => state.headerReducers
+  );
 
   // Header reactive on scroll
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      dispatch(setIsHeaderVisible(prevScrollPos > currentScrollPos || currentScrollPos <= 5));
+      dispatch(
+        setIsHeaderVisible(
+          prevScrollPos > currentScrollPos || currentScrollPos <= 5
+        )
+      );
       dispatch(setPrevScrollPos(currentScrollPos));
     };
 
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("touchmove", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("touchmove", handleScroll);
     };
   }, [prevScrollPos, isHeaderVisible]);
 
-  const renderNavbar = () => {
+  const renderNavMenuPanel = (onClick: any, label: string) => {
     return (
-      <div className={`navbar-section ${isNavbarOpen ? "open" : ""}`}>
-        <div className="navbar-header-container">
-          <div onClick={props.toggleNavbar}>
-            <FontAwesomeIcon icon={faX} className="hamburger-logo" />
-          </div>
-        </div>
-        <div className="navbar-menu-container">
-          <div>
-            <button className="navbar-btn-text navbar-btn-border" onClick={props.handleAboutClick}>
-              About
-            </button>
-          </div>
-          <div>
-            <button className="navbar-btn-text navbar-btn-border" onClick={props.handleWorksClick}>
-              Works
-            </button>
-          </div>
-          <div>
-            <button className="navbar-btn-text navbar-btn-border" onClick={props.handleContactClick}>
-              Contact
-            </button>
-          </div>
-          <div>
-            <button className="navbar-btn-text navbar-btn-border" onClick={props.handleResumeClick}>
-              Resume
-            </button>
-          </div>
-        </div>
+      <div>
+        <button className="navbar-btn-text navbar-btn-border" onClick={onClick}>
+          {label}
+        </button>
       </div>
+    );
+  };
+
+  const renderHeaderMenuPanel = (onClick: any, label: string) => {
+    return (
+      <button className="header-btn-text header-btn-border" onClick={onClick}>
+        {label}
+      </button>
     );
   };
 
   return (
     <>
-      {isMobileView ? (
-        <>
-          {renderMobileHeader()}
-          {renderNavbar()}
-        </>
-      ) : (
-        <>{renderDesktopHeader()}</>
+      <header
+        className={`header ${
+          isHeaderVisible ? "header--visible" : "header--hidden"
+        }`}
+      >
+        <div className="hamburger-main-wrapper">
+          <div className="header-logo">MIKO</div>
+
+          {isMobileView ? (
+            <button onClick={props.toggleNavbar}>
+              <FontAwesomeIcon icon={faBars} className="hamburger-logo" />
+            </button>
+          ) : (
+            <div className="header-menu">
+              {renderHeaderMenuPanel(props.handleAboutClick, "About")}
+
+              {renderHeaderMenuPanel(props.handleProjectsClick, "Projects")}
+
+              {renderHeaderMenuPanel(props.handleContactClick, "Contact")}
+
+              <AnimatedButtonView
+                animatedButtonClick={props.handleResumeClick}
+              />
+            </div>
+          )}
+        </div>
+      </header>
+
+      {isMobileView && (
+        <div className={`navbar-section ${isNavbarOpen ? "open" : ""}`}>
+          <div className="navbar-header-wrapper">
+            <button onClick={props.toggleNavbar}>
+              <FontAwesomeIcon icon={faX} className="hamburger-logo" />
+            </button>
+          </div>
+
+          <div className="navbar-menu-wrapper">
+            {renderNavMenuPanel(props.handleAboutClick, "About")}
+
+            {renderNavMenuPanel(props.handleProjectsClick, "Works")}
+
+            {renderNavMenuPanel(props.handleContactClick, "Contact")}
+
+            {renderNavMenuPanel(props.handleResumeClick, "Resume")}
+          </div>
+        </div>
       )}
     </>
   );
 };
 
-export default Header;
+export default HeaderView;

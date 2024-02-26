@@ -1,0 +1,17 @@
+.social-link-panel-wrapper {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+
+  .slp-logo {
+    height: 24px;
+    width: 24px;
+    color: #b0b2c3;
+  }
+
+  .slp-logo:hover {
+    color: #c094d3;
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out;
+  }
+}

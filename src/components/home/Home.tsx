@@ -1,23 +1,25 @@
-import { useEffect, useRef } from "react";
-import "./Home.css";
+import "./styles.scss";
 
-import Footer from "../../views/footer/Footer";
-import Header from "../../views/header/Header";
-import Sidebar from "../../views/sidebar/Sidebar";
-import About from "../about/About";
-import Contact from "../contact/Contact";
+import { useEffect, useRef } from "react";
+
+import HeaderView from "../../views/header/Header";
+import AboutComponent from "../about/About";
+import ContactComponent from "../contact/Contact";
 import ProjectsComponent from "../projects/Projects";
+
+import FooterView from "../../views/footer/Footer";
+import SidebarView from "../../views/sidebar/Sidebar";
 
 import { useDispatch, useSelector } from "react-redux";
 import {
   setIsMobileView,
   setIsNavbarOpen,
-} from "../../redux/components/home/action";
+} from "../../redux/components/portfolio/action";
 
-const Home = () => {
+const HomeComponent = () => {
   const dispatch: any = useDispatch();
   const { isNavbarOpen, isMobileView } = useSelector(
-    (state: any) => state.homeReducers
+    (state: any) => state.portfolioReducers
   );
 
   const aboutMeSectionRef = useRef<HTMLDivElement>(null);
@@ -28,14 +30,14 @@ const Home = () => {
     if (aboutMeSectionRef.current) {
       window.scrollTo({
         top: isMobileView
-          ? aboutMeSectionRef.current.offsetTop - 25 // Mobile View
+          ? aboutMeSectionRef.current.offsetTop - 25
           : aboutMeSectionRef.current.offsetTop - 50,
         behavior: "smooth",
       });
     }
   };
 
-  const handleWorksClick = () => {
+  const handleProjectsClick = () => {
     if (projectsSectionRef.current) {
       window.scrollTo({
         top: isMobileView
@@ -73,7 +75,8 @@ const Home = () => {
       dispatch(setIsMobileView(screenWidth <= mobileView));
     };
 
-    handleResize(); // Check initial width
+    handleResize();
+
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -84,20 +87,20 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="sidebar-section">
-        <Sidebar />
+        <SidebarView />
       </div>
 
       <div className="content-main-section">
         <div className="header-section">
-          <Header
+          <HeaderView
             handleAboutClick={handleAboutClick}
-            handleWorksClick={handleWorksClick}
+            handleProjectsClick={handleProjectsClick}
             handleContactClick={handleContactClick}
             handleResumeClick={handleResumeClick}
             toggleNavbar={toggleNavbar}
           />
         </div>
-        
+
         <div className={`content-sub-section ${isNavbarOpen ? "open" : ""}`}>
           <div className="introduction-section">
             <div className="introduction-main-container">
@@ -112,7 +115,7 @@ const Home = () => {
           </div>
 
           <div className="about-me-section content-section-padding">
-            <About aboutMeSectionRef={aboutMeSectionRef} />
+            <AboutComponent aboutMeSectionRef={aboutMeSectionRef} />
           </div>
 
           <div className="projects-section content-section-padding">
@@ -120,10 +123,11 @@ const Home = () => {
           </div>
 
           <div className="contact-section">
-            <Contact contactSectionRef={contactSectionRef} />
+            <ContactComponent contactSectionRef={contactSectionRef} />
           </div>
+
           <div className="footer-section">
-            <Footer />
+            <FooterView />
           </div>
         </div>
       </div>
@@ -131,4 +135,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeComponent;

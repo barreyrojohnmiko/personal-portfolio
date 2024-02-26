@@ -1,0 +1,16 @@
+.sidebar-main-wrapper {
+  height: 100vh;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+  .sidebar-sub-wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
