@@ -67,7 +67,7 @@ const AboutComponent: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
                   <div>{tech}</div>
                 </div>
               ))} */}
-
+ 
               <ul className="tech-listing-spacing">
                 {techList1.map((tech, index) => (
                   <li className="bullet-point" key={index}>
