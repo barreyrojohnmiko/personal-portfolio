@@ -14,7 +14,7 @@ const panelData = [
       "Effortlessly allows you to create, edit, and organize your notes. With backup feature that ensures that your notes are always secure, with the flexibility to export your local storage data at any time.",
     githubLink: "https://github.com/barreyrojohnmiko/RJSNotes",
     externalLink: "https://barreyrojohnmiko.github.io/RJSNotes/",
-    techUsed: ["ReactJS", "Redux"],
+    techUsed: ["ReactJS", "TypeScript"],
   },
   {
     pID: 2,
@@ -23,7 +23,13 @@ const panelData = [
       "This service emerged after Adobe's largest ever customer accounts breach. This aims to check if your credentials have been exposed, reducing the risk of widespread account compromise.",
     githubLink: "",
     externalLink: "https://breach.itfabrik24.net/",
-    techUsed: ["ReactJS", "Redux"],
+    techUsed: [
+      "ReactJS",
+      "JavaScript",
+      "Material UI",
+      "Node.JS",
+      "MongoDB",
+    ],
   },
   {
     pID: 3,
@@ -33,7 +39,13 @@ const panelData = [
     githubLink: "",
     externalLink:
       "https://rueckrufe.codemeta.info/login?fbclid=IwAR0wG6T2rGI9BeNakJWugxRX_opsrCBT53739VVi99K6o-RiV5vFj2DzGVg",
-    techUsed: ["ReactJS", "Redux"],
+    techUsed: [
+      "ReactJS",
+      "JavaScript",
+      "Material UI",
+      "Node.JS",
+      "MongoDB",
+    ],
   },
 ];
 
