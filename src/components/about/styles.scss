@@ -29,9 +29,9 @@
         justify-content: center;
         flex-direction: column;
 
-        .about-me-text {
-          margin-left: 15px;
+        padding-left: 15px;
 
+        .about-me-text {
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -44,6 +44,7 @@
         .tech-listing {
           display: flex;
           flex-direction: row;
+          gap: 10px;
         }
 
         .tech-listing-spacing {
@@ -70,6 +71,20 @@
             border-style: solid;
             border-width: 5px 0 5px 5px;
             border-color: transparent transparent transparent #c094d3;
+          }
+        }
+
+        .tech-stack-panel {
+          display: flex;
+          justify-content: flex-start;
+          border-radius: 4px;
+          border: 1px solid #c094d3;
+
+          padding: 6px 10px;
+
+          :nth-child(1) {
+            font-size: 14px;
+            color: #c094d3;
           }
         }
       }
