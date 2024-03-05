@@ -11,6 +11,7 @@ const techList = [
   "Angular",
   "React Native",
   "Ionic-Angular",
+
   "JavaScript",
   "TypeScript",
   "HTML",
@@ -18,25 +19,27 @@ const techList = [
   "SCSS",
   "Bootstrap",
   "Material-UI",
+  
+  "Postman",
 
   ".NET Core 6.0 C#",
-  "Postman",
   "SQL",
   "MSSQL",
   "SQLite",
-
   "Firebase",
-  "Git",
-  "GitHub",
-  "GitLab",
-  "Azure",
 
   "Jasmine",
   "Karma",
   "TestBed",
   "Cypress",
 
+  "Git",
+  "GitHub",
+  "GitLab",
+  "Azure",
+
   "Figma",
+
   "WordPress",
 ];
 
