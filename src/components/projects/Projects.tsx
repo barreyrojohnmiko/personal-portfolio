@@ -14,7 +14,7 @@ const panelData = [
       "Effortlessly allows you to create, edit, and organize your notes. With backup feature that ensures that your notes are always secure, with the flexibility to export your local storage data at any time.",
     githubLink: "https://github.com/barreyrojohnmiko/RJSNotes",
     externalLink: "https://barreyrojohnmiko.github.io/RJSNotes/",
-    techUsed: ["ReactJS", "TypeScript"],
+    techUsed: ["ReactJS (CRA)", "TypeScript"],
   },
   {
     pID: 2,
@@ -24,10 +24,10 @@ const panelData = [
     githubLink: "",
     externalLink: "https://breach.itfabrik24.net/",
     techUsed: [
-      "ReactJS",
+      "ReactJS (Vite)",
       "JavaScript",
-      "Material UI",
-      "Node.JS",
+      "Material-UI",
+      "Node.js",
       "MongoDB",
     ],
   },
@@ -40,10 +40,10 @@ const panelData = [
     externalLink:
       "https://rueckrufe.codemeta.info/login?fbclid=IwAR0wG6T2rGI9BeNakJWugxRX_opsrCBT53739VVi99K6o-RiV5vFj2DzGVg",
     techUsed: [
-      "ReactJS",
+      "ReactJS (Vite)",
       "JavaScript",
-      "Material UI",
-      "Node.JS",
+      "Material-UI",
+      "Node.js",
       "MongoDB",
     ],
   },

@@ -6,26 +6,38 @@ import devImage from "../../assets/images/Miko.jpg";
 
 type AboutProps = { aboutMeSectionRef: RefObject<HTMLDivElement> };
 
-const techList1 = [
-  "TypeScript",
-  "ReactJS",
+const techList = [
+  "ReactJS (CRA & Vite)",
+  "Angular",
   "React Native",
-  ".NET Core 6.0 C#",
+  "Ionic-Angular",
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "SCSS",
   "Bootstrap",
+  "Material-UI",
+
+  ".NET Core 6.0 C#",
+  "Postman",
+  "SQL",
+  "MSSQL",
+  "SQLite",
+
+  "Firebase",
   "Git",
   "GitHub",
+  "GitLab",
+  "Azure",
+
+  "Jasmine",
+  "Karma",
+  "TestBed",
+  "Cypress",
+
   "Figma",
   "WordPress",
-];
-const techList2 = [
-  "JavaScript",
-  "Angular 15",
-  "Ionic-Angular",
-  "SQL",
-  "Postman",
-  "Azure",
-  "GitLab",
-  "SCSS/CSS3",
 ];
 
 const AboutComponent: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
@@ -45,8 +57,6 @@ const AboutComponent: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
               programming as a career.
             </div>
 
-            <br />
-
             <div className="about-me-text">
               Today, as a full-time software developer with a specialization in
               mobile development, I have extensive experience working with
@@ -55,34 +65,18 @@ const AboutComponent: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
               beyond just mobile development.
             </div>
 
-            <br />
+            <div className="tech-container">
+              <div className="about-me-text">
+                Here are a few technologies I’ve been working with recently:
+              </div>
 
-            <div className="about-me-text">
-              Here are a few technologies I’ve been working with recently:
-            </div>
-
-            <div className="tech-listing">
-              {/*{techList1.map((tech, index) => (
-                <div className="tech-stack-panel">
-                  <div>{tech}</div>
-                </div>
-              ))} */}
- 
-              <ul className="tech-listing-spacing">
-                {techList1.map((tech, index) => (
-                  <li className="bullet-point" key={index}>
-                    {tech}
-                  </li>
+              <div className="tech-listing">
+                {techList.map((tech, index) => (
+                  <div className="tech-stack-panel" key={index}>
+                    <div>{tech}</div>
+                  </div>
                 ))}
-              </ul>
-
-              <ul className="tech-listing-spacing">
-                {techList2.map((tech, index) => (
-                  <li className="bullet-point" key={index}>
-                    {tech}
-                  </li>
-                ))}
-              </ul>
+              </div>
             </div>
           </div>
 
