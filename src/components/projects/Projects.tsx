@@ -29,10 +29,6 @@ const panelData = [
       "Material-UI",
       "Node.js",
       "MongoDB",
-      
-      "Material-UI",
-      "Node.js",
-      "MongoDB",
     ],
   },
   {
