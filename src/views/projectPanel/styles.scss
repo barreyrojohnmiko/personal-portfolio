@@ -6,6 +6,8 @@
   border-radius: 20px;
   position: relative;
 
+  padding: 25px;
+
   .projects-panel-header {
     display: flex;
     flex-direction: row;
@@ -13,7 +15,7 @@
     align-items: center;
     height: 50px;
 
-    padding: 25px;
+    padding-bottom: 25px;
 
     .projects-panel-left-logo {
       font-style: normal;
@@ -34,9 +36,6 @@
     flex-direction: column;
     gap: 5px;
 
-    padding-left: 25px;
-    padding-right: 25px;
-
     .panel-title {
       font-style: normal;
       font-weight: 400;
@@ -54,16 +53,15 @@
   }
 
   .projects-panel-footer {
-    margin: 0 0 20px;
+    margin-bottom: 20px;
 
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    position: absolute;
     flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 5px;
+    position: absolute;
     bottom: 0;
-
-    padding-left: 25px;
 
     .tech-label {
       font-style: normal;
@@ -93,6 +91,6 @@
 @media screen and (min-width: 0px) and (max-width: 1023px) {
   .projects-panel-wrapper {
     height: 400px;
-    width: 100%;
+    flex: 1;
   }
 }
