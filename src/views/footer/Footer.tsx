@@ -11,7 +11,7 @@ import SocialLinkPanelView from "../socialLinkPanel/SocialLinkPanel";
 
 const FooterView = () => {
   return (
-    <div className="footer-main-wrapper">
+    <footer className="footer-main-wrapper">
       <div className="footer-sub-wrapper">
         <SocialLinkPanelView
           title={"Github"}
@@ -45,7 +45,7 @@ const FooterView = () => {
       <div className="footer-text">
         Designed & Developed by John Miko Barreyro
       </div>
-    </div>
+    </footer>
   );
 };
 
