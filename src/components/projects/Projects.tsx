@@ -38,7 +38,7 @@ const panelData = [
       "Streamline call management at front desk. Easily notify the intended recipient to promptly return calls whenever someone contacts the company.",
     githubLink: "",
     externalLink:
-      "https://rueckrufe.codemeta.info/login?fbclid=IwAR0wG6T2rGI9BeNakJWugxRX_opsrCBT53739VVi99K6o-RiV5vFj2DzGVg",
+      "https://rufzurück.de",
     techUsed: [
       "ReactJS (Vite)",
       "JavaScript",

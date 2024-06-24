@@ -19,7 +19,7 @@ const techList = [
   "SCSS",
   "Bootstrap",
   "Material-UI",
-  
+
   "Postman",
 
   ".NET Core 6.0 C#",
@@ -30,7 +30,7 @@ const techList = [
 
   "Jasmine",
   "Karma",
-  "TestBed",
+  "SonarQube",
   "Cypress",
 
   "Git",
@@ -61,11 +61,12 @@ const AboutComponent: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
             </div>
 
             <div className="about-me-text">
-              Today, as a full-time software developer with a specialization in
-              mobile development, I have extensive experience working with
-              various frameworks such as React and Angular. I'm also proficient
-              in web development and have a broad range of skills that extend
-              beyond just mobile development.
+              Today, with 4 years of experience as a Software Developer, I have
+              specialized in frontend development, working extensively with
+              React and Angular frameworks for both web and mobile applications.
+              I'm also experienced in backend development using .NET Core 6 and
+              C#, consistently writing clean, reusable code following global
+              standards.
             </div>
 
             <div className="tech-container">
