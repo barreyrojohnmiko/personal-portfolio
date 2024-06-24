@@ -41,6 +41,9 @@ const techList = [
   "Figma",
 
   "WordPress",
+
+  "Axosoft",
+  "Jira"
 ];
 
 const AboutComponent: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
