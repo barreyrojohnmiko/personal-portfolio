@@ -30,6 +30,12 @@ const panelData = [
       "Node.js",
       "MongoDB",
     ],
+    credits: {
+      cLabelStart: "Special thanks to",
+      cLabelEnd: "for providing the data used in this service.",
+      cName: "Have I Been Pwned",
+      cUrl: "https://haveibeenpwned.com/",
+    },
   },
   {
     pID: 3,
@@ -37,8 +43,7 @@ const panelData = [
     projectDescription:
       "Streamline call management at front desk. Easily notify the intended recipient to promptly return calls whenever someone contacts the company.",
     githubLink: "",
-    externalLink:
-      "https://rufzurück.de",
+    externalLink: "https://rufzurück.de",
     techUsed: [
       "ReactJS (Vite)",
       "JavaScript",
@@ -63,9 +68,11 @@ const ProjectsComponent: React.FC<ProjectsProps> = ({ projectsSectionRef }) => {
               githubLink={data.githubLink}
               externalLink={data.externalLink}
               techUsed={data.techUsed}
+              credits={data.credits}
             />
           </React.Fragment>
         ))}
+
       </div>
 
       <div className="projects-label closing">&lt;/projects&gt;</div>
