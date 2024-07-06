@@ -22,7 +22,8 @@ const techList = [
 
   "Postman",
 
-  ".NET Core 6.0 C#",
+  ".NET Core 6",
+  "C#",
   "SQL",
   "MSSQL",
   "SQLite",

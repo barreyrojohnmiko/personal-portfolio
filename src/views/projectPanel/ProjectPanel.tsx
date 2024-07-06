@@ -32,7 +32,7 @@ const ProjectPanelView = (props: PanelDetailObject) => {
         />
 
         <div className="right-panel-content">
-          {props.githubLink !== "" &&
+          {props.githubLink &&
             renderPanelLogo(
               "Github",
               () => window.open(props.githubLink),
