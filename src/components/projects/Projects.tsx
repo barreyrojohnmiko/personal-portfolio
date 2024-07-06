@@ -25,7 +25,7 @@ const panelData = [
   {
     projectLabel: 'Mobile iReader: Cashless Tech',
     projectDescription:
-      'Intercard continues its industry-leading innovation with the Intercard Mobile iReader application. The Intercard Mobile iReader puts the power of cashless technology in your hands. Staff can use a mobile phone or tablet to quickly process guests, greatly reducing wait times and allowing guests to have an amazing experience at all attractions. This powerful application handles both RFID and barcoded play cards as well as our newest wristband and iQ-Ticket offerings. Staff will also be able to provide guests with their play card balances using a simple tap or scan.',
+      `Intercard's Mobile iReader app efficiently handles both RFID and barcoded play cards, along with wristbands and iQ-Ticket offerings, streamlining guest transactions and enhancing overall experience at attractions.`,
     externalLink:
       'https://play.google.com/store/apps/details?id=com.intercardinc.mobileireader',
     techUsed: ['React-Native', 'TypeScript', '.Net Core 6', 'C#', 'Firebase'],
@@ -33,7 +33,7 @@ const panelData = [
   {
     projectLabel: 'iService: Remote Game Mgmt',
     projectDescription:
-      'The Intercard iService app provides easy remote game management for one or more locations. Users can remotely put a game out of service for maintenance and technicians can use it to track repair information and when the game was placed back into service. All information is automatically updated on the server and in the cloud..',
+      'The Intercard iService app provides easy remote game management for one or more locations. Users can remotely put a game out of service for maintenance and technicians can use it to track repair information and when the game was placed back into service. All information is automatically updated on the server and in the cloud.',
     externalLink:
       'https://play.google.com/store/apps/details?id=com.intercard.service.application',
     techUsed: ['React-Native', 'TypeScript', '.Net Core 6', 'C#', 'Firebase'],
