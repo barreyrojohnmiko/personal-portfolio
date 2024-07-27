@@ -59,7 +59,7 @@ const HomeComponent = () => {
 
   const handleResumeClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1srIhNxPqkJE3tgj0nWWtpwm6zG7eByqS/view?usp=sharinga",
+      "https://drive.google.com/file/d/1rYod_R2tpsUqlmlYjOuuudbcElITL36d/view?usp=sharing",
       "_blank"
     );
   };

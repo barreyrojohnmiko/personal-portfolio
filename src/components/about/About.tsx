@@ -6,26 +6,45 @@ import devImage from "../../assets/images/Miko.jpg";
 
 type AboutProps = { aboutMeSectionRef: RefObject<HTMLDivElement> };
 
-const techList1 = [
-  "TypeScript",
-  "ReactJS",
+const techList = [
+  "ReactJS (CRA & Vite)",
+  "Angular",
   "React Native",
-  ".NET Core 6.0 C#",
+  "Ionic-Angular",
+
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "SCSS",
   "Bootstrap",
+  "Material-UI",
+
+  "Postman",
+
+  ".NET Core 6",
+  "C#",
+  "SQL",
+  "MSSQL",
+  "SQLite",
+  "Firebase",
+
+  "Jasmine",
+  "Karma",
+  "SonarQube",
+  "Cypress",
+
   "Git",
   "GitHub",
-  "Figma",
-  "WordPress",
-];
-const techList2 = [
-  "JavaScript",
-  "Angular 15",
-  "Ionic-Angular",
-  "SQL",
-  "Postman",
-  "Azure",
   "GitLab",
-  "SCSS/CSS3",
+  "Azure",
+
+  "Figma",
+
+  "WordPress",
+
+  "Axosoft",
+  "Jira"
 ];
 
 const AboutComponent: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
@@ -45,38 +64,27 @@ const AboutComponent: React.FC<AboutProps> = ({ aboutMeSectionRef }) => {
               programming as a career.
             </div>
 
-            <br />
-
             <div className="about-me-text">
-              Today, as a full-time software developer with a specialization in
-              mobile development, I have extensive experience working with
-              various frameworks such as React and Angular. I'm also proficient
-              in web development and have a broad range of skills that extend
-              beyond just mobile development.
+              Today, with 4 years of experience as a Software Developer, I have
+              specialized in frontend development, working extensively with
+              React and Angular frameworks for both web and mobile applications.
+              I'm also experienced in backend development using .NET Core 6 and
+              C#, consistently writing clean, reusable code following global
+              standards.
             </div>
 
-            <br />
+            <div className="tech-container">
+              <div className="about-me-text">
+                Here are a few technologies I’ve been working with recently:
+              </div>
 
-            <div className="about-me-text">
-              Here are a few technologies I’ve been working with recently:
-            </div>
-
-            <div className="tech-listing">
-              <ul className="tech-listing-spacing">
-                {techList1.map((tech, index) => (
-                  <li className="bullet-point" key={index}>
-                    {tech}
-                  </li>
+              <div className="tech-listing">
+                {techList.map((tech, index) => (
+                  <div className="tech-stack-panel" key={index}>
+                    <div>{tech}</div>
+                  </div>
                 ))}
-              </ul>
-
-              <ul className="tech-listing-spacing">
-                {techList2.map((tech, index) => (
-                  <li className="bullet-point" key={index}>
-                    {tech}
-                  </li>
-                ))}
-              </ul>
+              </div>
             </div>
           </div>
 

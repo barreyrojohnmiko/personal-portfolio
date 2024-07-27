@@ -7,10 +7,9 @@
   .developer-profile {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
     .about-label {
-      margin-bottom: 10px;
-
       font-style: normal;
       font-weight: normal;
       font-size: 25px;
@@ -28,48 +27,45 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        gap: 20px;
+
+        padding-left: 15px;
 
         .about-me-text {
-          margin-left: 15px;
-
+          width: 100%;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
           color: #8892b0;
-          width: 100%;
+          text-align: justify;
           overflow: hidden;
           line-height: 30px;
+        }
+
+        .tech-container {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
         }
 
         .tech-listing {
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
         }
 
-        .tech-listing-spacing {
-          margin-right: 20px;
+        .tech-stack-panel {
+          display: flex;
+          justify-content: flex-start;
+          border-radius: 4px;
+          border: 1px solid #c094d3;
 
-          list-style: none;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          color: #8892b0;
-          line-height: 25px;
+          padding: 6px 10px;
 
-          .bullet-point {
-            position: relative;
-            padding-left: 20px;
-          }
-
-          .bullet-point::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            border-style: solid;
-            border-width: 5px 0 5px 5px;
-            border-color: transparent transparent transparent #c094d3;
+          :nth-child(1) {
+            font-size: 14px;
+            color: #c094d3;
           }
         }
       }
@@ -99,6 +95,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
 
         .about-me-sub-container {
           .about-me-text {

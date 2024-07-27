@@ -32,7 +32,7 @@ const ProjectPanelView = (props: PanelDetailObject) => {
         />
 
         <div className="right-panel-content">
-          {props.githubLink !== "" &&
+          {props.githubLink &&
             renderPanelLogo(
               "Github",
               () => window.open(props.githubLink),
@@ -50,6 +50,25 @@ const ProjectPanelView = (props: PanelDetailObject) => {
       <div className="projects-panel-body-wrapper">
         <div className="panel-title">{props.projectLabel}</div>
         <div className="panel-description">{props.projectDescription}</div>
+
+        {props.credits && (
+          <>
+            <br />
+            
+            <div className="panel-description">
+              {props.credits.cLabelStart}{" "}
+              <a
+                className="panel-description"
+                href={props.credits.cUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {props.credits.cName}
+              </a>{" "}
+              {props.credits.cLabelEnd}
+            </div>
+          </>
+        )}
       </div>
 
       <div className="projects-panel-footer">
