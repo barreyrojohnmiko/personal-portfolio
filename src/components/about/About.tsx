@@ -11,6 +11,7 @@ const techList = [
   "Angular",
   "React Native",
   "Ionic-Angular",
+  "NextJS",
 
   "JavaScript",
   "TypeScript",
@@ -19,6 +20,7 @@ const techList = [
   "SCSS",
   "Bootstrap",
   "Material-UI",
+  "TailwindCSS",
 
   "Postman",
 
@@ -31,6 +33,7 @@ const techList = [
 
   "Jasmine",
   "Karma",
+  "Jest",
   "SonarQube",
   "Cypress",
 
